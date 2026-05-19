@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>NUMERA | Firma financiera moderna</title>
+
+<meta
+name="description"
+content="Contabilidad, estrategia financiera y automatización para negocios modernos."/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+
+--bg:#081426;
+--bg2:#0d1e36;
+
+--card:rgba(255,255,255,.05);
+
+--border:rgba(255,255,255,.08);
+
+--text:#ffffff;
+
+--muted:rgba(255,255,255,.72);
+
+--accent:#7C6CFF;
+
+--accent2:#A99EFF;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#081426 0%,
+#0b1d36 100%
+);
+
+color:var(--text);
+
+overflow-x:hidden;
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background-image:
+linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+
+background-size:60px 60px;
+
+opacity:.18;
+
+pointer-events:none;
+
+z-index:-2;
+}
+
+.glow{
+
+position:fixed;
+
+width:600px;
+height:600px;
+
+border-radius:50%;
+
+filter:blur(100px);
+
+z-index:-1;
+
+opacity:.28;
+
+animation:floatGlow 8s ease-in-out infinite;
+}
+
+.glow1{
+top:-240px;
+left:-240px;
+background:#5b4fff;
+}
+
+.glow2{
+bottom:-260px;
+right:-260px;
+background:#264dff;
+}
+
+@keyframes floatGlow{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(20px,-20px);
+}
+
+100%{
+transform:translate(0,0);
+}
+}
+
+.container{
+width:90%;
+max-width:1180px;
+margin:auto;
+}
+
+/* NAV */
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 0;
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+backdrop-filter:blur(16px);
+
+background:rgba(8,20,38,.72);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+
+height:24px;
+
+width:auto;
+
+filter:brightness(0) invert(1);
+
+opacity:.95;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:rgba(255,255,255,.74);
+
+font-size:.96rem;
+
+font-weight:500;
+
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+.nav-btn{
+
+background:var(--accent);
+
+padding:12px 20px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:700;
+
+font-size:.94rem;
+
+transition:.3s;
+}
+
+.nav-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 30px rgba(124,108,255,.35);
+}
+
+/* HERO */
+
+.hero{
+padding:70px 0 90px;
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1.15fr .85fr;
+
+gap:50px;
+
+align-items:center;
+}
+
+.hero-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 18px;
+
+border-radius:999px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:.76rem;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+margin-bottom:24px;
+
+color:rgba(255,255,255,.75);
+}
+
+.hero-logo{
+
+height:48px;
+
+margin-bottom:26px;
+
+filter:brightness(0) invert(1);
+
+opacity:.92;
+}
+
+.hero h1{
+
+font-size:clamp(2.8rem,5vw,5rem);
+
+line-height:.98;
+
+letter-spacing:-3px;
+
+margin-bottom:24px;
+
+font-weight:800;
+
+max-width:760px;
+}
+
+.hero-gradient{
+
+background:
+linear-gradient(
+90deg,
+white 0%,
+#C9C2FF 55%,
+#7C6CFF 100%
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+
+max-width:640px;
+
+font-size:1.02rem;
+
+line-height:1.85;
+
+color:var(--muted);
+
+margin-bottom:34px;
+}
+
+.buttons{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:14px;
+}
+
+.btn{
+
+padding:14px 22px;
+
+border-radius:15px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.3s;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+}
+
+.btn-primary{
+background:var(--accent);
+color:white;
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 18px 40px rgba(124,108,255,.35);
+}
+
+.btn-secondary{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:white;
+}
+
+.btn-secondary:hover{
+background:rgba(255,255,255,.09);
+transform:translateY(-3px);
+}
+
+/* HERO SIDE */
+
+.hero-side{
+
+background:rgba(255,255,255,.045);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:34px;
+
+border-radius:28px;
+
+backdrop-filter:blur(14px);
+
+box-shadow:0 10px 50px rgba(0,0,0,.2);
+}
+
+.metric{
+margin-bottom:28px;
+}
+
+.metric:last-child{
+margin-bottom:0;
+}
+
+.metric h3{
+
+font-size:1.6rem;
+
+margin-bottom:8px;
+}
+
+.metric p{
+
+color:rgba(255,255,255,.7);
+
+line-height:1.7;
+}
+
+/* SECTION */
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:56px;
+}
+
+.section-title span{
+
+display:inline-block;
+
+padding:10px 18px;
+
+border-radius:999px;
+
+background:rgba(124,108,255,.12);
+
+border:1px solid rgba(124,108,255,.22);
+
+font-size:.76rem;
+
+letter-spacing:1px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+color:#C9C2FF;
+}
+
+.section-title h2{
+
+font-size:clamp(2rem,4vw,3.6rem);
+
+letter-spacing:-2px;
+
+margin-bottom:18px;
+
+line-height:1.05;
+}
+
+.section-title p{
+
+max-width:680px;
+
+margin:auto;
+
+font-size:1rem;
+
+line-height:1.8;
+
+color:var(--muted);
+}
+
+/* ABOUT */
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+align-items:center;
+}
+
+.about-text h3{
+
+font-size:2.4rem;
+
+line-height:1.08;
+
+margin-bottom:24px;
+}
+
+.about-text h3 span{
+color:#9F93FF;
+}
+
+.about-text p{
+
+color:rgba(255,255,255,.74);
+
+line-height:1.85;
+
+margin-bottom:18px;
+
+font-size:1rem;
+}
+
+.about-cards{
+display:grid;
+gap:16px;
+}
+
+.about-card{
+
+background:rgba(255,255,255,.045);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:24px;
+
+border-radius:22px;
+
+transition:.35s;
+
+backdrop-filter:blur(12px);
+}
+
+.about-card:hover{
+
+transform:translateY(-6px);
+
+border-color:rgba(124,108,255,.35);
+
+box-shadow:0 16px 40px rgba(0,0,0,.18);
+}
+
+.about-card h4{
+font-size:1.05rem;
+margin-bottom:10px;
+}
+
+.about-card p{
+
+color:rgba(255,255,255,.68);
+
+line-height:1.7;
+
+font-size:.95rem;
+}
+
+/* SERVICES */
+
+.services{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:18px;
+}
+
+.service-card{
+
+background:rgba(255,255,255,.045);
+
+padding:28px;
+
+border-radius:24px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+backdrop-filter:blur(12px);
+
+min-height:240px;
+}
+
+.service-card:hover{
+
+transform:translateY(-8px);
+
+border-color:rgba(124,108,255,.35);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.2),
+0 0 30px rgba(124,108,255,.08);
+}
+
+.service-icon{
+
+width:46px;
+height:46px;
+
+border-radius:14px;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+background:#101f38;
+
+color:#A99EFF;
+
+font-weight:700;
+
+font-size:.88rem;
+
+margin-bottom:18px;
+}
+
+.service-card h3{
+
+font-size:1.14rem;
+
+margin-bottom:14px;
+
+line-height:1.4;
+}
+
+.service-card p{
+
+line-height:1.75;
+
+color:rgba(255,255,255,.72);
+
+font-size:.96rem;
+}
+
+/* METODO */
+
+.dark-section{
+
+background:
+linear-gradient(
+180deg,
+#091527 0%,
+#0c1c33 100%
+);
+}
+
+.metodo-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+}
+
+.metodo-card{
+
+background:
+rgba(255,255,255,.04);
+
+border:
+1px solid rgba(124,108,255,.18);
+
+border-radius:28px;
+
+padding:34px;
+
+backdrop-filter:blur(14px);
+
+transition:.35s;
+}
+
+.metodo-card:hover{
+
+transform:
+translateY(-8px);
+
+border-color:
+rgba(124,108,255,.45);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.25);
+}
+
+.metodo-numero{
+
+color:
+rgba(201,194,255,.75);
+
+font-size:1rem;
+
+font-weight:700;
+
+margin-bottom:22px;
+}
+
+.metodo-card h3{
+
+font-size:1.45rem;
+
+margin-bottom:16px;
+}
+
+.metodo-card p{
+
+color:
+rgba(255,255,255,.72);
+
+line-height:1.8;
+}
+
+/* CTA */
+
+.contact-box{
+
+background:
+linear-gradient(
+135deg,
+rgba(124,108,255,.18),
+rgba(255,255,255,.04)
+);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:56px;
+
+border-radius:34px;
+
+text-align:center;
+}
+
+.contact-box h2{
+
+font-size:2.4rem;
+
+margin-bottom:18px;
+
+line-height:1.1;
+}
+
+.contact-box p{
+
+max-width:680px;
+
+margin:auto;
+
+color:rgba(255,255,255,.74);
+
+line-height:1.85;
+
+margin-bottom:32px;
+}
+
+/* FOOTER */
+
+footer{
+
+padding:50px 0;
+
+border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+flex-wrap:wrap;
+}
+
+.footer h4{
+margin-bottom:14px;
+}
+
+.footer p,
+.footer a{
+
+color:rgba(255,255,255,.66);
+
+text-decoration:none;
+
+line-height:1.9;
+}
+
+.footer a:hover{
+color:white;
+}
+
+/* FLOAT */
+
+.float-btn{
+
+position:fixed;
+
+right:24px;
+bottom:24px;
+
+background:#25D366;
+
+color:white;
+
+padding:14px 22px;
+
+border-radius:999px;
+
+font-weight:700;
+
+text-decoration:none;
+
+box-shadow:0 16px 40px rgba(37,211,102,.4);
+
+z-index:999;
+
+transition:.3s;
+}
+
+.float-btn:hover{
+transform:translateY(-4px);
+}
+
+/* ANIMATION */
+
+.fade{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:
+opacity .9s ease,
+transform .9s ease;
+}
+
+.fade.visible{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:980px){
+
+.nav-links{
+display:none;
+}
+
+.hero-grid,
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:50px 0 70px;
+}
+
+.hero h1{
+
+font-size:2.9rem;
+
+letter-spacing:-2px;
+
+line-height:1.02;
+}
+
+.contact-box{
+padding:40px 24px;
+}
+
+.contact-box h2{
+font-size:2rem;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+<img
+src="02.LETRAS_NUMERA.svg"
+alt="NUMERA">
+
+</div>
+
+<div class="nav-links">
+
+<a href="#quienes">
+Quiénes somos
+</a>
+
+<a href="#servicios">
+Servicios
+</a>
+
+<a href="#metodologia">
+Metodología
+</a>
+
+<a href="#contacto">
+Contacto
+</a>
+
+</div>
+
+<a
+href="https://wa.me/529514018492"
+target="_blank"
+class="nav-btn">
+
+Agendar asesoría
+
+</a>
+
+</nav>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero fade">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<div>
+
+<img
+src="01.ISOTIPO_NUMERA(2).svg"
+alt="NUMERA"
+class="hero-logo">
+
+<div class="hero-badge">
+
+CONTABILIDAD · FINANZAS · AUTOMATIZACIÓN
+
+</div>
+
+<h1>
+
+Automatización contable y financiera
+<span class="hero-gradient">
+para negocios modernos.
+</span>
+
+</h1>
+
+<p>
+
+NUMERA integra estrategia financiera,
+contabilidad y automatización para optimizar
+la operación de negocios y emprendedores.
+
+</p>
+
+<div class="buttons">
+
+<a
+href="https://wa.me/529514018492"
+target="_blank"
+class="btn btn-primary">
+
+Hablar con NUMERA
+
+</a>
+
+<a
+href="mailto:numeracontadores@gmail.com"
+class="btn btn-secondary">
+
+Correo
+
+</a>
+
+<a
+href="https://linktr.ee/SERVICIOS_CONTABLES_NUMERA"
+target="_blank"
+class="btn btn-secondary">
+
+Otros medios
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-side">
+
+<div class="metric">
+
+<h3>
++Integración
+</h3>
+
+<p>
+Procesos financieros organizados y optimizados para negocios modernos.
+</p>
+
+</div>
+
+<div class="metric">
+
+<h3>
++Estrategia
+</h3>
+
+<p>
+Planeación fiscal y financiera orientada a crecimiento y estabilidad.
+</p>
+
+</div>
+
+<div class="metric">
+
+<h3>
++Automatización
+</h3>
+
+<p>
+Flujo moderno de información contable y administrativa.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUIENES SOMOS -->
+
+<section class="section fade" id="quienes">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+QUIÉNES SOMOS
+</span>
+
+<h2>
+Firma financiera moderna enfocada en estrategia y automatización.
+</h2>
+
+<p>
+
+NUMERA combina análisis financiero,
+automatización y acompañamiento profesional
+para ayudar a negocios y emprendedores
+a tomar mejores decisiones.
+
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<h3>
+
+Contabilidad moderna con
+<span>
+visión estratégica.
+</span>
+
+</h3>
+
+<p>
+
+Integramos herramientas modernas,
+procesos optimizados y claridad financiera
+para que tu negocio opere con estabilidad.
+
+</p>
+
+<p>
+
+Nuestro enfoque combina contabilidad,
+consultoría fiscal y automatización
+administrativa orientada al crecimiento.
+
+</p>
+
+</div>
+
+<div class="about-cards">
+
+<div class="about-card">
+
+<h4>
+Automatización
+</h4>
+
+<p>
+Optimización de flujos y procesos para reducir errores y trabajo manual.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h4>
+Cumplimiento
+</h4>
+
+<p>
+Planeación y cumplimiento fiscal con enfoque estratégico.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h4>
+Crecimiento
+</h4>
+
+<p>
+Información financiera clara para mejorar la toma de decisiones.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+
+<section class="section fade" id="servicios">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+SERVICIOS
+</span>
+
+<h2>
+Todo lo que tu negocio necesita en un solo lugar.
+</h2>
+
+<p>
+
+Servicios contables, fiscales y financieros
+estructurados para negocios modernos.
+
+</p>
+
+</div>
+
+<div class="services">
+
+<div class="service-card">
+
+<div class="service-icon">
+01
+</div>
+
+<h3>
+Contabilidad y estados financieros
+</h3>
+
+<p>
+Gestión contable orientada a claridad financiera y control operativo.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+02
+</div>
+
+<h3>
+Consultoría fiscal
+</h3>
+
+<p>
+Planeación y cumplimiento fiscal estratégico para personas físicas y negocios.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+03
+</div>
+
+<h3>
+Nómina y seguridad social
+</h3>
+
+<p>
+Administración de nómina, IMSS y procesos laborales relacionados.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+04
+</div>
+
+<h3>
+Asesoría financiera
+</h3>
+
+<p>
+Análisis financiero para mejorar estabilidad y crecimiento.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+05
+</div>
+
+<h3>
+Automatización administrativa
+</h3>
+
+<p>
+Optimización de procesos y flujo de información financiera.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<div class="service-icon">
+06
+</div>
+
+<h3>
+Soluciones personalizadas
+</h3>
+
+<p>
+Servicios adaptados a la operación y necesidades de cada negocio.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- METODO -->
+
+<section class="section dark-section fade" id="metodologia">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+METODOLOGÍA
+</span>
+
+<h2>
+Cómo trabajamos.
+</h2>
+
+<p>
+
+Un enfoque basado en análisis,
+integración estratégica y seguimiento continuo.
+
+</p>
+
+</div>
+
+<div class="metodo-grid">
+
+<div class="metodo-card">
+
+<div class="metodo-numero">
+01
+</div>
+
+<h3>
+Diagnóstico integral
+</h3>
+
+<p>
+Analizamos la situación financiera, contable y fiscal del negocio.
+</p>
+
+</div>
+
+<div class="metodo-card">
+
+<div class="metodo-numero">
+02
+</div>
+
+<h3>
+Integración estratégica
+</h3>
+
+<p>
+Diseñamos procesos organizados y eficientes adaptados a cada operación.
+</p>
+
+</div>
+
+<div class="metodo-card">
+
+<div class="metodo-numero">
+03
+</div>
+
+<h3>
+Gestión continua
+</h3>
+
+<p>
+Damos seguimiento constante para mantener estabilidad y control financiero.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="section fade" id="contacto">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>
+
+Conversemos sobre el futuro financiero de tu negocio.
+
+</h2>
+
+<p>
+
+NUMERA combina tecnología,
+estrategia financiera y procesos modernos
+para optimizar la operación de negocios
+y emprendedores.
+
+</p>
+
+<div
+class="buttons"
+style="justify-content:center;">
+
+<a
+class="btn btn-primary"
+href="https://wa.me/529514018492"
+target="_blank">
+
+Agendar asesoría
+
+</a>
+
+<a
+class="btn btn-secondary"
+href="mailto:numeracontadores@gmail.com">
+
+Correo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer">
+
+<div>
+
+<h4>
+NUMERA
+</h4>
+
+<p>
+
+Contabilidad moderna y automatización financiera.<br>
+Oaxaca, México.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+Contacto
+</h4>
+
+<p>
+
+<a href="mailto:numeracontadores@gmail.com">
+numeracontadores@gmail.com
+</a>
+
+</p>
+
+<p>
+
+<a
+href="https://instagram.com/numera_contadores"
+target="_blank">
+
+Instagram
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<a
+href="https://wa.me/529514018492"
+class="float-btn"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+<script>
+
+const observer =
+new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add('visible');
+
+}
+
+});
+
+},{
+threshold:.15
+});
+
+document
+.querySelectorAll('.fade')
+.forEach((el)=>{
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+
+</html>
