@@ -440,12 +440,29 @@
   .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 32px;
   }
 
   .hero {
-    padding: 110px 0 90px;
+    padding: 70px 0 80px;
     min-height: 80vh;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 24px;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hero .buttons .btn {
+    width: 100%;
   }
 
   .hero h1 {
