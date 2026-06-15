@@ -37,3 +37,20 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 980px) {
+  .glow {
+    width: 400px;
+    height: 400px;
+    filter: blur(80px);
+    opacity: .35;
+  }
+  .glow1 {
+    top: -150px;
+    left: -150px;
+  }
+  .glow2 {
+    bottom: -150px;
+    right: -150px;
+  }
+}

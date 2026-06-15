@@ -440,6 +440,7 @@
   .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 
   .hero {
