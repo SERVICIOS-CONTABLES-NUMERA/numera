@@ -350,7 +350,7 @@
 /* NEW CONTACT CARDS */
 .contact-hub-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 24px;
   max-width: 900px;
   margin: 0 auto 60px auto;
@@ -447,9 +447,14 @@
   }
 
   .hero h1 {
-    font-size: 2.9rem;
-    letter-spacing: -2px;
-    line-height: 1.02;
+    font-size: clamp(2rem, 8vw, 2.9rem);
+    letter-spacing: -1.5px;
+    line-height: 1.05;
+  }
+
+  .nav-btn {
+    padding: 9px 13px;
+    font-size: 0.8rem;
   }
 
   .contact-box {

@@ -328,28 +328,28 @@
       // 1. Agregar el documento oficial exacto como enlace principal (primer botón)
       if (item.source_url) {
         let label = 'Ver documento oficial';
-        let icono = '🏛️';
+        let icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>';
         let tipo  = 'oficial';
 
         if (item.source_type === 'pdf_oficial' || item.source_url.endsWith('.pdf')) {
           label = 'Ver PDF';
-          icono = '📄';
+          icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>';
           tipo  = 'pdf';
         } else if (item.source_type === 'sil' || item.source_type === 'iniciativa') {
           label = 'Ver iniciativa';
-          icono = '⚖️';
+          icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg>';
           tipo  = 'iniciativa';
         } else if (item.source_type === 'dof') {
           label = 'Ver en DOF';
-          icono = '📋';
+          icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>';
           tipo  = 'dof';
         } else if (item.source_type === 'gaceta') {
           label = 'Ver en Gaceta';
-          icono = '📑';
+          icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>';
           tipo  = 'gaceta';
         } else if (item.source_type === 'comunicado_shcp' || item.source_type === 'comunicado_sat') {
           label = 'Ver comunicado oficial';
-          icono = '📰';
+          icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>';
           tipo  = 'oficial';
         }
 
@@ -392,7 +392,7 @@
               url:        'https://www.dof.gob.mx',
               verificado: true,
               es_publico: true,
-              icono:      '📋',
+              icono:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>',
             },
             {
               tipo:       'oficial',
@@ -400,7 +400,7 @@
               url:        'https://www.gob.mx/hacienda',
               verificado: true,
               es_publico: true,
-              icono:      '🏛️',
+              icono:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>',
             },
             {
               tipo:       'pdf',
@@ -408,7 +408,7 @@
               url:        'https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf',
               verificado: true,
               es_publico: true,
-              icono:      '📄',
+              icono:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
             }
           ];
         } else {
@@ -421,7 +421,7 @@
               url:        itemUrl,
               verificado: true,
               es_publico: true,
-              icono:      '🏛️',
+              icono:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>',
             }];
           }
         }
@@ -477,19 +477,19 @@
      ════════════════════════════════════════════════════════ */
 
   const CAT_META = {
-    fiscal:      { label: 'Fiscal',                 icono: '🏛️', color: '#60A5FA' },
-    contable:    { label: 'Contable',               icono: '📊', color: '#34D399' },
-    legal:       { label: 'Legal y regulatorio',    icono: '⚖️', color: '#A78BFA' },
-    legislativo: { label: 'Legislativo',            icono: '🏛️', color: '#C4B5FD' },
-    financiero:  { label: 'Financiero estratégico', icono: '📈', color: '#FACC15' },
-    empresarial: { label: 'Empresarial',            icono: '🏢', color: '#FB923C' },
-    cripto:      { label: 'Cripto y Fintech',       icono: '₿',  color: '#94A3B8' },
+    fiscal:      { label: 'Fiscal',                 icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>', color: '#60A5FA' },
+    contable:    { label: 'Contable',               icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>', color: '#34D399' },
+    legal:       { label: 'Legal y regulatorio',    icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg>', color: '#A78BFA' },
+    legislativo: { label: 'Legislativo',            icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>', color: '#C4B5FD' },
+    financiero:  { label: 'Financiero estratégico', icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>', color: '#FACC15' },
+    empresarial: { label: 'Empresarial',            icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="8" y1="18" x2="8" y2="18"/><line x1="16" y1="18" x2="16" y2="18"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/></svg>', color: '#FB923C' },
+    cripto:      { label: 'Cripto y Fintech',       icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M8 8h6a3 3 0 0 1 0 6H8"/><path d="M8 14h7a3 3 0 0 1 0 6H8"/><line x1="8" y1="2" x2="8" y2="22"/><line x1="11" y1="2" x2="11" y2="8"/><line x1="11" y1="20" x2="11" y2="22"/></svg>',  color: '#94A3B8' },
   };
 
   const IMPACTO_META = {
-    alto:  { label: 'Alto',  color: '#FF4D6D', icon: '🔴' },
-    medio: { label: 'Medio', color: '#FACC15', icon: '🟡' },
-    bajo:  { label: 'Bajo',  color: '#22C55E', icon: '🟢' },
+    alto:  { label: 'Alto',  color: '#FF4D6D', icon: '<span class="legend-dot" style="background:#FF4D6D; display:inline-block; margin-right:4px;"></span>' },
+    medio: { label: 'Medio', color: '#FACC15', icon: '<span class="legend-dot" style="background:#FACC15; display:inline-block; margin-right:4px;"></span>' },
+    bajo:  { label: 'Bajo',  color: '#22C55E', icon: '<span class="legend-dot" style="background:#22C55E; display:inline-block; margin-right:4px;"></span>' },
   };
 
   const SEV_CFG = {
@@ -561,7 +561,7 @@
 
   function emptyState(msg) {
     return `<div class="empty-state">
-      <div class="empty-icon">🔍</div>
+      <div class="empty-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
       <p>${esc(msg)}</p>
     </div>`;
   }
@@ -614,10 +614,10 @@
     }
     const score = i.trust_score !== undefined ? i.trust_score : UrlManager.getConfianza(i.fuente);
     if (score >= 90) {
-      badges += `<span class="badge-official">🏛️ OFFICIAL SOURCE</span>`;
+      badges += `<span class="badge-official"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg> OFFICIAL SOURCE</span>`;
     }
     if (i.verified) {
-      badges += `<span class="badge-verified">✓ VERIFIED</span>`;
+      badges += `<span class="badge-verified"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="20 6 9 17 4 12"/></svg> VERIFIED</span>`;
     }
     return badges;
   }
@@ -643,7 +643,7 @@
           url: item.pdf_url,
           verificado: true,
           es_publico: true,
-          icono: '📄'
+          icono: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'
         });
       }
     }
@@ -653,11 +653,11 @@
       if (!hasSourceUrl) {
         let label = 'Ver fuente oficial';
         let tipo = 'oficial';
-        let icono = '🏛️';
-        if (source === 'dof') { label = 'Ver en DOF'; tipo = 'dof'; icono = '📋'; }
-        else if (source === 'sil') { label = 'Ver en SIL'; tipo = 'sil'; icono = '⚖️'; }
-        else if (source === 'senado') { label = 'Ver en Senado (SIL)'; tipo = 'senado'; icono = '🏛️'; }
-        else if (source === 'banxico') { label = 'Ver en Banxico'; tipo = 'banxico'; icono = '📈'; }
+        let icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>';
+        if (source === 'dof') { label = 'Ver en DOF'; tipo = 'dof'; icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>'; }
+        else if (source === 'sil') { label = 'Ver en SIL'; tipo = 'sil'; icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg>'; }
+        else if (source === 'senado') { label = 'Ver en Senado (SIL)'; tipo = 'senado'; icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>'; }
+        else if (source === 'banxico') { label = 'Ver en Banxico'; tipo = 'banxico'; icono = '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>'; }
         
         links.unshift({
           tipo: tipo,
@@ -716,13 +716,13 @@
     const typeClass   = `link-${l.tipo || 'oficial'}`;
     const verifiedCls = l.verificado ? 'link-verified' : 'link-unverified';
     const icon = l.icono || {
-      oficial:     '🏛️', dof:        '📋', rmf:         '📜',
-      declaracion: '📝', pdf:        '📄', gaceta:      '📑',
-      iniciativa:  '⚖️', sil:        '⚖️', senado:      '🏛️',
-      nif:         '📊', regulatorio: '🔒', noticias:    '📰',
-    }[l.tipo] || '🔗';
+      oficial:     '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>', dof:        '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>', rmf:         '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+      declaracion: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>', pdf:        '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>', gaceta:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+      iniciativa:  '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg>', sil:        '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg>', senado:      '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg>',
+      nif:         '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>', regulatorio: '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>', noticias:    '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>',
+    }[l.tipo] || '<svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>';
     const checkMark = l.verificado
-      ? `<span class="link-check" title="URL verificada en catálogo oficial">✓</span>`
+      ? `<span class="link-check" title="URL verificada en catálogo oficial"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="20 6 9 17 4 12"/></svg></span>`
       : '';
     return `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer"
        class="link-btn ${typeClass} ${verifiedCls}"
@@ -734,24 +734,24 @@
   /** Badge de confianza de fuente con score del propio ítem o del catálogo */
   function sourceConfianzaBadge(fuente, item = null) {
     const score = (item && item.trust_score !== undefined) ? item.trust_score : UrlManager.getConfianza(fuente);
-    if (score >= 93) return `<span class="src-confianza src-conf-alta" title="Confianza ${score}/100 — Documento oficial primario verificado">⭐ Fuente oficial</span>`;
-    if (score >= 75) return `<span class="src-confianza src-conf-media" title="Confianza ${score}/100 — Documento verificado secundario">✓ Verificada</span>`;
-    return `<span class="src-confianza src-conf-baja" title="Confianza ${score}/100 — Información de contexto o secundaria">○ Contexto</span>`;
+    if (score >= 93) return `<span class="src-confianza src-conf-alta" title="Confianza ${score}/100 — Documento oficial primario verificado"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Fuente oficial</span>`;
+    if (score >= 75) return `<span class="src-confianza src-conf-media" title="Confianza ${score}/100 — Documento verificado secundario"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="20 6 9 17 4 12"/></svg> Verificada</span>`;
+    return `<span class="src-confianza src-conf-baja" title="Confianza ${score}/100 — Información de contexto o secundaria"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><circle cx="12" cy="12" r="10"/></svg> Contexto</span>`;
   }
 
   /** Distintivo de tipo de contenido para el modelo SOURCE-FIRST */
   function contentTypeBadge(tipoContenido, sinDocumento = false) {
     if (sinDocumento) {
-      return `<span class="content-type-badge type-sin-documento" title="Sin documento oficial de respaldo — Solo informativo">⚠️ Sin doc. oficial</span>`;
+      return `<span class="content-type-badge type-sin-documento" title="Sin documento oficial de respaldo — Solo informativo"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Sin doc. oficial</span>`;
     }
     if (tipoContenido === 'documento_oficial') {
-      return `<span class="content-type-badge type-documento-oficial" title="Contenido enlazado directamente a documento oficial verificado">🏛️ Doc. Oficial</span>`;
+      return `<span class="content-type-badge type-documento-oficial" title="Contenido enlazado directamente a documento oficial verificado"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg> Doc. Oficial</span>`;
     }
     if (tipoContenido === 'analisis_numera') {
-      return `<span class="content-type-badge type-analisis-numera" title="Comentario y análisis estratégico de expertos NUMERA">📊 Análisis NUMERA</span>`;
+      return `<span class="content-type-badge type-analisis-numera" title="Comentario y análisis estratégico de expertos NUMERA"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Análisis NUMERA</span>`;
     }
     if (tipoContenido === 'resumen_ia') {
-      return `<span class="content-type-badge type-resumen-ia" title="Resumen automático generado por Inteligencia Artificial de fuentes públicas">🤖 Resumen IA</span>`;
+      return `<span class="content-type-badge type-resumen-ia" title="Resumen automático generado por Inteligencia Artificial de fuentes públicas"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="11" width="18" height="10" rx="2" ry="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg> Resumen IA</span>`;
     }
     return '';
   }
@@ -980,7 +980,7 @@
         <p>${esc(i.descripcion)}</p>
         ${keywordTags(i._keywords)}
         <div class="alert-footer">
-          <span>📅 ${relativeTime(i.fecha)}</span>
+          <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${relativeTime(i.fecha)}</span>
           ${catPill(i._categoria)}
           ${sourceConfianzaBadge(i.fuente, i)}
         </div>
@@ -1021,7 +1021,7 @@
         <p>${esc(i.descripcion)}</p>
         ${keywordTags(i._keywords)}
         <div class="alert-footer">
-          <span>📅 ${relativeTime(i.fecha)}</span>
+          <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${relativeTime(i.fecha)}</span>
           ${catPill(i._categoria)}
           ${sourceConfianzaBadge(i.fuente, i)}
         </div>
@@ -1063,8 +1063,8 @@
           </div>
           <h4>${esc(i.titulo)}</h4>
           <div class="dof-meta">
-            <span>📄 ${esc(i.seccion || '')}</span>
-            <span>📅 ${formatDate(i.fecha)}</span>
+            <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> ${esc(i.seccion || '')}</span>
+            <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${formatDate(i.fecha)}</span>
           </div>
           ${scoreBar(i._score)}
           ${keywordTags(i._keywords)}
@@ -1096,7 +1096,7 @@
     return `
       <div class="leg-card fade-up">
         <div class="leg-top">
-          <span class="leg-camara">⚖ ${esc(i.camara)}</span>
+          <span class="leg-camara"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg> ${esc(i.camara)}</span>
           <span class="leg-estado ${esc(estadoCls)}">${esc(i.estado)}</span>
           ${contentTypeBadge(i.tipo_contenido, i.sin_documento_oficial)}
           ${mxFlag(i._mexico)}
@@ -1110,7 +1110,7 @@
         <div class="leg-etapa">${esc(i.etapa)}</div>
         ${keywordTags(i._keywords)}
         <div class="leg-footer">
-          <span>📅 ${formatDate(i.fecha)}</span>
+          <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${formatDate(i.fecha)}</span>
           <span class="leg-relevancia ${esc(relCls)}">${esc(i.relevancia)}</span>
         </div>
         ${renderLinks(links)}
@@ -1155,7 +1155,7 @@
         <p class="news-summary">${esc(i.descripcion || i.resumen || '')}</p>
         ${keywordTags(i._keywords)}
         <div class="news-footer">
-          <span>📅 ${relativeTime(i.fecha)}</span>
+          <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${relativeTime(i.fecha)}</span>
         </div>
         ${renderLinks(links)}
       </div>`;
@@ -1197,7 +1197,7 @@
         <p class="news-summary">${esc(i.resumen || i.descripcion || '')}</p>
         ${keywordTags(i._keywords)}
         <div class="news-footer">
-          <span>📅 ${relativeTime(i.fecha)}</span>
+          <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${relativeTime(i.fecha)}</span>
         </div>
         ${renderLinks(links)}
       </div>`;
@@ -1241,8 +1241,8 @@
           <h4>${esc(i.titulo)}</h4>
           <p style="font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.65;margin:6px 0 8px;">${esc(i.descripcion || '')}</p>
           <div class="dof-meta">
-            <span>🏛️ ${esc(srcLabel)}</span>
-            <span>📅 ${formatDate(i.fecha)}</span>
+            <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg> ${esc(srcLabel)}</span>
+            <span><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ${formatDate(i.fecha)}</span>
           </div>
           ${scoreBar(i._score)}
           ${keywordTags(i._keywords)}

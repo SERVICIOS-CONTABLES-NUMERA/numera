@@ -12,9 +12,14 @@
 
 <meta property="og:title"       content="Radar Fiscal Inteligente | NUMERA" />
 <meta property="og:description" content="Monitoreo fiscal, DOF, legislativo, regulatorio y estratégico con scoring de relevancia y filtros avanzados." />
-<meta property="og:image"       content="https://servicios-contables-numera.github.io/numera/logo-preview.png" />
+<meta property="og:image"       content="https://servicios-contables-numera.github.io/numera/logo_numera.png" />
 <meta property="og:url"         content="https://servicios-contables-numera.github.io/numera/radar/" />
 <meta property="og:type"        content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Radar Fiscal Inteligente | NUMERA" />
+<meta name="twitter:description" content="Monitoreo fiscal, DOF, legislativo, regulatorio y estratégico con scoring de relevancia y filtros avanzados." />
+<meta name="twitter:image" content="https://servicios-contables-numera.github.io/numera/logo_numera.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +43,7 @@
 
   <div class="topnav-left">
     <a href="../" class="nav-logo" aria-label="Inicio NUMERA">
-      <img src="../02.LETRAS_NUMERA.svg" alt="NUMERA" />
+      <img src="../assets/logos/02.LETRAS_NUMERA.svg" alt="NUMERA" />
     </a>
     <span class="nav-divider" aria-hidden="true"></span>
     <nav class="nav-breadcrumb" aria-label="Ruta de navegación">
@@ -50,7 +55,7 @@
 
   <div class="topnav-center">
     <div class="search-wrap" role="search">
-      <span class="search-icon" aria-hidden="true">🔍</span>
+      <span class="search-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
       <label for="search-input" class="sr-only">Buscar en el Radar Fiscal</label>
       <input
         type="search"
@@ -83,7 +88,7 @@
     Clasificación semántica automática · Scoring de relevancia 0–100 · Enfoque México.
   </p>
   <div class="score-stats-badge" id="score-stats" aria-live="polite">
-    📊 Calculando relevancia…
+    <svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Calculando relevancia…
   </div>
 </div>
 
@@ -116,46 +121,46 @@
       <div class="sidebar-label">Vistas</div>
 
       <button class="filter-btn active" data-filter-vista="todo" id="filter-todo" type="button">
-        <span class="fi-icon">📡</span> Todo el Radar
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg></span> Todo el Radar
         <span class="filter-count" id="count-side-todo">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="vigilancia" id="filter-vigilancia" type="button">
-        <span class="fi-icon">🚨</span> Vigilancia Fiscal
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span> Vigilancia Fiscal
         <span class="filter-count" id="count-side-vigilancia">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="alertas" id="filter-alertas" type="button">
-        <span class="fi-icon">⚡</span> Alertas críticas
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span> Alertas críticas
         <span class="filter-count" id="count-side-alertas">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="dof" id="filter-dof" type="button">
-        <span class="fi-icon">📋</span> Publicaciones oficiales
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></span> Publicaciones oficiales
         <span class="filter-count" id="count-side-dof">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="legislativo" id="filter-legislativo" type="button">
-        <span class="fi-icon">⚖️</span> Seguimiento legislativo
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg></span> Seguimiento legislativo
         <span class="filter-count" id="count-side-legislativo">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="analisis" id="filter-analisis" type="button">
-        <span class="fi-icon">📈</span> Análisis estratégico
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span> Análisis estratégico
       </button>
 
       <button class="filter-btn" data-filter-vista="noticias" id="filter-noticias" type="button">
-        <span class="fi-icon">📰</span> Noticias estratégicas
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg></span> Noticias estratégicas
         <span class="filter-count" id="count-side-noticias">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="regulatorio" id="filter-regulatorio" type="button">
-        <span class="fi-icon">🔒</span> Cambios regulatorios
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span> Cambios regulatorios
         <span class="filter-count" id="count-side-regulatorio">—</span>
       </button>
 
       <button class="filter-btn" data-filter-vista="fuentes" id="filter-fuentes" type="button">
-        <span class="fi-icon">🔗</span> Estado de fuentes
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span> Estado de fuentes
       </button>
     </div>
 
@@ -164,28 +169,28 @@
       <div class="sidebar-label">Categoría</div>
 
       <button class="filter-btn active" data-filter-cat="todas" type="button">
-        <span class="fi-icon">🗂️</span> Todas las categorías
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></span> Todas las categorías
       </button>
       <button class="filter-btn" data-filter-cat="fiscal" type="button">
-        <span class="fi-icon">🏛️</span> Fiscal
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg></span> Fiscal
       </button>
       <button class="filter-btn" data-filter-cat="contable" type="button">
-        <span class="fi-icon">📊</span> Contable
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span> Contable
       </button>
       <button class="filter-btn" data-filter-cat="legal" type="button">
-        <span class="fi-icon">⚖️</span> Legal y regulatorio
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg></span> Legal y regulatorio
       </button>
       <button class="filter-btn" data-filter-cat="legislativo" type="button">
-        <span class="fi-icon">🏛️</span> Legislativo
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6l7-3 7 3"/><path d="M4 10v11"/><path d="M8 10v11"/><path d="M12 10v11"/><path d="M16 10v11"/><path d="M20 10v11"/></svg></span> Legislativo
       </button>
       <button class="filter-btn" data-filter-cat="financiero" type="button">
-        <span class="fi-icon">📈</span> Financiero estratégico
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span> Financiero estratégico
       </button>
       <button class="filter-btn" data-filter-cat="empresarial" type="button">
-        <span class="fi-icon">🏢</span> Empresarial
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="8" y1="18" x2="8" y2="18"/><line x1="16" y1="18" x2="16" y2="18"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/></svg></span> Empresarial
       </button>
       <button class="filter-btn" data-filter-cat="cripto" type="button">
-        <span class="fi-icon">₿</span> Cripto y Fintech
+        <span class="fi-icon"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M8 8h6a3 3 0 0 1 0 6H8"/><path d="M8 14h7a3 3 0 0 1 0 6H8"/><line x1="8" y1="2" x2="8" y2="22"/><line x1="11" y1="2" x2="11" y2="8"/><line x1="11" y1="20" x2="11" y2="22"/></svg></span> Cripto y Fintech
       </button>
     </div>
 
@@ -193,16 +198,16 @@
     <div class="sidebar-section">
       <div class="sidebar-label">Nivel de impacto</div>
       <button class="impact-filter-btn active" data-filter-impacto="todos" type="button">
-        🔵 Todos los niveles
+        <span class="legend-dot" style="background:#A99EFF; display:inline-block; margin-right:4px;"></span> Todos los niveles
       </button>
       <button class="impact-filter-btn" data-filter-impacto="alto" type="button">
-        🔴 Alto — Acción inmediata
+        <span class="legend-dot" style="background:#FF4D6D; display:inline-block; margin-right:4px;"></span> Alto — Acción inmediata
       </button>
       <button class="impact-filter-btn" data-filter-impacto="medio" type="button">
-        🟡 Medio — Revisión prioritaria
+        <span class="legend-dot" style="background:#FACC15; display:inline-block; margin-right:4px;"></span> Medio — Revisión prioritaria
       </button>
       <button class="impact-filter-btn" data-filter-impacto="bajo" type="button">
-        🟢 Bajo — Informativo
+        <span class="legend-dot" style="background:#22C55E; display:inline-block; margin-right:4px;"></span> Bajo — Informativo
       </button>
     </div>
 
@@ -244,9 +249,9 @@
       <div class="sidebar-label">Ordenar por</div>
       <div class="sort-wrap">
         <select id="sort-select" class="sort-select" aria-label="Criterio de ordenamiento">
-          <option value="fecha">📅 Fecha (reciente primero)</option>
-          <option value="score">📊 Score de relevancia</option>
-          <option value="impacto">🔴 Nivel de impacto</option>
+          <option value="fecha"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Fecha (reciente primero)</option>
+          <option value="score"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Score de relevancia</option>
+          <option value="impacto"><span class="legend-dot" style="background:#FF4D6D; display:inline-block; margin-right:4px;"></span> Nivel de impacto</option>
         </select>
       </div>
     </div>
@@ -292,7 +297,7 @@
     <section class="dashboard-section" id="dash-vigilancia" aria-labelledby="h2-vigilancia">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">🚨</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
           <h2 id="h2-vigilancia">Vigilancia Fiscal</h2>
           <span class="section-count" id="count-vigilancia">—</span>
         </div>
@@ -313,7 +318,7 @@
     <section class="dashboard-section" id="dash-alertas" aria-labelledby="h2-alertas">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">⚡</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <h2 id="h2-alertas">Alertas críticas</h2>
           <span class="section-count" id="count-alertas">—</span>
         </div>
@@ -334,7 +339,7 @@
     <section class="dashboard-section" id="dash-dof" aria-labelledby="h2-dof">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">📋</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
           <h2 id="h2-dof">Publicaciones oficiales</h2>
           <span class="section-count" id="count-dof">—</span>
         </div>
@@ -355,7 +360,7 @@
     <section class="dashboard-section" id="dash-legislativo" aria-labelledby="h2-leg">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">⚖️</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M12 3v17"/><path d="M5 10l7-7 7 7"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/></svg></div>
           <h2 id="h2-leg">Seguimiento legislativo</h2>
           <span class="section-count" id="count-legislativo">—</span>
         </div>
@@ -376,7 +381,7 @@
     <section class="dashboard-section" id="dash-analisis" aria-labelledby="h2-analisis">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">📈</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
           <h2 id="h2-analisis">Análisis estratégico</h2>
           <span class="section-count" id="count-analisis">—</span>
         </div>
@@ -397,7 +402,7 @@
     <section class="dashboard-section" id="dash-noticias" aria-labelledby="h2-news">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">📰</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg></div>
           <h2 id="h2-news">Noticias estratégicas</h2>
           <span class="section-count" id="count-noticias">—</span>
         </div>
@@ -418,7 +423,7 @@
     <section class="dashboard-section" id="dash-regulatorio" aria-labelledby="h2-reg">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">🔒</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
           <h2 id="h2-reg">Cambios regulatorios</h2>
           <span class="section-count" id="count-regulatorio">—</span>
         </div>
@@ -439,7 +444,7 @@
     <section class="dashboard-section" id="dash-fuentes" aria-labelledby="h2-fuentes">
       <div class="section-header">
         <div class="section-title-text">
-          <div class="section-icon" aria-hidden="true">🔗</div>
+          <div class="section-icon" aria-hidden="true"><svg width="1.1em" height="1.1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fi-icon-svg" style="vertical-align: middle;"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
           <h2 id="h2-fuentes">Estado de fuentes</h2>
         </div>
       </div>
