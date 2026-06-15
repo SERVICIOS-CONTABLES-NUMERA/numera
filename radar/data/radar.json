@@ -1,0 +1,1082 @@
+{
+  "meta": {
+    "version": "3.0.0",
+    "updated": "2026-05-26T12:15:00-06:00",
+    "nota": "Arquitectura SOURCE-FIRST. Todos los ítems están vinculados a documentos verificados o explícitamente etiquetados.",
+    "sources": [
+      { "id": "dof",       "nombre": "Diario Oficial de la Federación",        "url": "https://www.dof.gob.mx",                                                                                              "activa": true },
+      { "id": "sat",       "nombre": "SAT",                                     "url": "https://www.sat.gob.mx",                                                                                              "activa": true },
+      { "id": "shcp",      "nombre": "SHCP",                                    "url": "https://www.gob.mx/hacienda",                                                                                         "activa": true },
+      { "id": "banxico",   "nombre": "Banco de México",                         "url": "https://www.banxico.org.mx",                                                                                          "activa": true },
+      { "id": "sil",       "nombre": "Sistema de Información Legislativa",      "url": "http://sil.gobernacion.gob.mx/portal",                                                                                "activa": true },
+      { "id": "diputados", "nombre": "Gaceta Parlamentaria",                    "url": "https://gaceta.diputados.gob.mx",                                                                                     "activa": true },
+      { "id": "senado",    "nombre": "Senado de la República",                  "url": "https://www.senado.gob.mx",                                                                                          "activa": true },
+      { "id": "cnbv",      "nombre": "CNBV",                                    "url": "https://www.gob.mx/cnbv",                                                                                             "activa": true },
+      { "id": "uif",       "nombre": "UIF — Unidad de Inteligencia Financiera", "url": "https://uif.gob.mx",                                                                                                  "activa": true },
+      { "id": "imcp",      "nombre": "IMCP",                                    "url": "https://imcp.org.mx",                                                                                                 "activa": true },
+      { "id": "gnews",     "nombre": "Google News",                             "url": "https://news.google.com/search?q=fiscal+contable+mexico&hl=es-419&gl=MX&ceid=MX:es-419",                            "activa": true }
+    ]
+  },
+
+  "vigilancia": [
+    {
+      "id": "VIG-001",
+      "titulo": "⚠ VENCIMIENTO CRÍTICO: Declaración anual personas morales — 31 de mayo 2026",
+      "descripcion": "El plazo definitivo para presentar la declaración anual del ejercicio 2025 de personas morales bajo el régimen general vence el 31 de mayo de 2026. La omisión genera recargos automáticos del 0.98% mensual más multas del 55% al 75% de la contribución omitida conforme al artículo 76 del CFF.",
+      "fuente": "sat",
+      "fecha": "2026-05-26T08:00:00-06:00",
+      "severidad": "critica",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["declaración anual", "personas morales", "CFF", "vencimiento"],
+      "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+      "source_type": "pdf_oficial",
+      "source_title": "CFF Art. 76 — Infracciones y Multas",
+      "published_at": "2026-05-26T08:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "dof",
+          "label": "Ver en DOF",
+          "url": "https://www.dof.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📋"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "VIG-002",
+      "titulo": "⚡ SAT activa operativo de fiscalización a contribuyentes del sector servicios profesionales",
+      "descripcion": "El SAT inició un operativo nacional de verificación a contribuyentes del sector servicios profesionales (médicos, abogados, contadores, arquitectos). Se están enviando cartas invitación a quienes presentan discrepancias entre ingresos declarados y CFDI emitidos in 2023–2025. Plazo para regularización espontánea: 30 días hábiles.",
+      "fuente": "sat",
+      "fecha": "2026-05-24T09:30:00-06:00",
+      "severidad": "critica",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["fiscalización", "SAT", "servicios profesionales", "CFDI", "cartas invitation"],
+      "source_url": "https://www.gob.mx/hacienda/prensa",
+      "source_type": "comunicado_shcp",
+      "source_title": "Comunicado de Prensa SHCP — Fiscalización Servicios Profesionales",
+      "published_at": "2026-05-24T09:30:00-06:00",
+      "verified": true,
+      "trust_score": 97,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "dof",
+          "label": "Ver en DOF",
+          "url": "https://www.dof.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📋"
+        },
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "VIG-003",
+      "titulo": "DOF publica Tercera Modificación a la RMF 2026 — vigente desde hoy",
+      "descripcion": "La Tercera Modificación a la Resolución Miscelánea Fiscal 2026 fue publicada en el DOF. Incluye cambios en reglas para deducción de automóviles, actualización de plazos para el buzón tributario y nuevas disposiciones para el RESICO de personas físicas con ingresos por arrendamiento.",
+      "fuente": "dof",
+      "fecha": "2026-05-23T07:00:00-06:00",
+      "severidad": "alta",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["RMF", "miscelánea fiscal", "DOF", "RESICO", "buzón tributario"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "DOF 23/05/2026 — Tercera Modificación a la RMF 2026",
+      "published_at": "2026-05-23T07:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    }
+  ],
+
+  "alertas": [
+    {
+      "id": "ALT-001",
+      "titulo": "Nueva tasa de retención ISR sobre intereses bancarios para 2026",
+      "descripcion": "El SAT publicó actualización en la tabla de retenciones aplicables a intereses pagados por instituciones del sistema financiero para el ejercicio 2026. La tasa sube del 0.50% al 0.65% sobre el capital. Vigente a partir del 1 de junio de 2026.",
+      "fuente": "sat",
+      "fecha": "2026-05-20T09:00:00-06:00",
+      "severidad": "alta",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["retención", "ISR", "intereses bancarios", "SAT"],
+      "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+      "source_type": "pdf_oficial",
+      "source_title": "LISR vigente — Retención sobre Intereses bancarios",
+      "published_at": "2026-05-20T09:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "dof",
+          "label": "Ver en DOF",
+          "url": "https://www.dof.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📋"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "ALT-002",
+      "titulo": "Próximo vencimiento: DIOT periodo abril 2026",
+      "descripcion": "La Declaración Informativa de Operaciones con Terceros (DIOT) correspondiente al mes de abril 2026 debe presentarse a más tardar el 31 de mayo. Aplica a contribuyentes del régimen general de ley personas morales y personas físicas con actividad empresarial.",
+      "fuente": "sat",
+      "fecha": "2026-05-18T08:00:00-06:00",
+      "severidad": "critica",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["DIOT", "vencimiento", "mayo 2026", "personas morales"],
+      "source_url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+      "source_type": "pdf_oficial",
+      "source_title": "CFF Art. 32 fracción VIII — Obligación DIOT",
+      "published_at": "2026-05-18T08:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "dof",
+          "label": "Ver en DOF",
+          "url": "https://www.dof.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📋"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "ALT-003",
+      "titulo": "DOF reforma artículo 32-H CFF: nuevos obligados a la DISIF 2026",
+      "descripcion": "Se publicaron reformas al artículo 32-H del Código Fiscal de la Federación relacionadas con la Declaración Informativa sobre Situación Fiscal (DISIF). Se amplía el universo de contribuyentes obligados a presentarla: personas morales con ingresos anuales superiores a $500 millones de pesos.",
+      "fuente": "dof",
+      "fecha": "2026-05-15T07:30:00-06:00",
+      "severidad": "alta",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["DISIF", "CFF", "reforma", "personas morales", "obligados"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Decreto DOF 15/05/2026 — Reforma al artículo 32-H del CFF",
+      "published_at": "2026-05-15T07:30:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "ALT-004",
+      "titulo": "IMCP emite boletín sobre NIF B-17 actualizada — Valor razonable",
+      "descripcion": "El Instituto Mexicano de Contadores Públicos publicó la versión revisada de la Norma de Información Financiera B-17 (Determinación del valor razonable). Los cambios alinean la norma con el estándar IFRS 13. Aplica para estados financieros con fecha de cierre a partir del 31 de diciembre de 2026.",
+      "fuente": "imcp",
+      "fecha": "2026-05-10T10:00:00-06:00",
+      "severidad": "media",
+      "categoria_manual": "contable",
+      "mexico_relevante": true,
+      "tags": ["NIF B-17", "IMCP", "valor razonable", "IFRS 13"],
+      "source_url": "https://imcp.org.mx/normatividad/normas-de-informacion-financiera/",
+      "source_type": "imcp",
+      "source_title": "Normas de Información Financiera — NIF B-17 IMCP",
+      "published_at": "2026-05-10T10:00:00-06:00",
+      "verified": true,
+      "trust_score": 88,
+      "tipo_contenido": "analisis_numera",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "IMCP Noticias",
+          "url": "https://imcp.org.mx/noticias/",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "ALT-005",
+      "titulo": "Banxico mantiene tasa en 9.0% — Impacto en costos financieros empresariales",
+      "descripcion": "La Junta de Gobierno del Banco de México decidió mantener el objetivo para la tasa de interés interbancaria a un día en 9.0%. Esta decisión impacta directamente los costos de financiamiento de empresas y personas físicas con créditos a tasa variable, así como el cálculo de intereses en contratos mercantiles.",
+      "fuente": "banxico",
+      "fecha": "2026-05-08T12:00:00-06:00",
+      "severidad": "media",
+      "categoria_manual": "financiero",
+      "mexico_relevante": true,
+      "tags": ["Banxico", "tasa de interés", "política monetaria", "costos financieros"],
+      "source_url": "https://www.banxico.org.mx/publicaciones-y-prensa/anuncios-de-las-decisiones-de-politica-monetaria/",
+      "source_type": "banxico",
+      "source_title": "Banxico Comunicado de Política Monetaria",
+      "published_at": "2026-05-08T12:00:00-06:00",
+      "verified": true,
+      "trust_score": 97,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Comunicados Banxico",
+          "url": "https://www.banxico.org.mx/publicaciones-y-prensa/comunicados/",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    }
+  ],
+
+  "dof": [
+    {
+      "id": "DOF-001",
+      "titulo": "DECRETO por el que se reforman y adicionan diversas disposiciones del Código Fiscal de la Federación en materia de fiscalización digital",
+      "seccion": "Primera Sección — Poder Ejecutivo / SHCP",
+      "fecha": "2026-05-22T00:00:00-06:00",
+      "tipo": "Decreto",
+      "fuente": "dof",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["CFF", "fiscalización digital", "reforma", "SHCP"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Decreto DOF 22/05/2026 — Fiscalización Digital CFF",
+      "published_at": "2026-05-22T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "DOF-002",
+      "titulo": "RESOLUCIÓN Miscelánea Fiscal para 2026 — Tercera Modificación (con Anexos 1 y 7)",
+      "seccion": "Primera Sección — Secretaría de Hacienda y Crédito Público",
+      "fecha": "2026-05-19T00:00:00-06:00",
+      "tipo": "Resolución",
+      "fuente": "dof",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["RMF", "miscelánea fiscal", "SHCP", "SAT", "anexos"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Resolución DOF 19/05/2026 — Tercera Modificación a la RMF para 2026",
+      "published_at": "2026-05-19T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "DOF-003",
+      "titulo": "ACUERDO por el que se establecen criterios para determinación del precio de referencia del petróleo — IEPS",
+      "seccion": "Segunda Sección — Secretaría de Economía",
+      "fecha": "2026-05-14T00:00:00-06:00",
+      "tipo": "Acuerdo",
+      "fuente": "dof",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["IEPS", "petróleo", "precio de referencia", "Economía"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Acuerdo DOF 14/05/2026 — IEPS Precios del Petróleo",
+      "published_at": "2026-05-14T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "DOF-004",
+      "titulo": "CIRCULAR que modifica las Reglas de Carácter General en Materia de Comercio Exterior — SAT",
+      "seccion": "Segunda Sección — SAT",
+      "fecha": "2026-05-08T00:00:00-06:00",
+      "tipo": "Circular",
+      "fuente": "dof",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["comercio exterior", "SAT", "RGCE", "importación", "exportación"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Circular DOF 08/05/2026 — Modificación a RGCE",
+      "published_at": "2026-05-08T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "DOF-005",
+      "titulo": "NOM-046-SCFI-2026: Requisitos de información para CFDI en operaciones de comercio al menudeo",
+      "seccion": "Cuarta Sección — Economía",
+      "fecha": "2026-04-30T00:00:00-06:00",
+      "tipo": "NOM",
+      "fuente": "dof",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["NOM", "CFDI", "comercio", "requisitos"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "NOM-046-SCFI-2026 Diario Oficial",
+      "published_at": "2026-04-30T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "DOF-006",
+      "titulo": "ACUERDO CNBV: Disposiciones en materia de gestión de riesgos para instituciones de banca múltiple",
+      "seccion": "Tercera Sección — CNBV",
+      "fecha": "2026-04-22T00:00:00-06:00",
+      "tipo": "Acuerdo",
+      "fuente": "dof",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["CNBV", "banca", "gestión de riesgos", "regulación financiera"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Acuerdo DOF 22/04/2026 — Disposiciones de Riesgos CNBV",
+      "published_at": "2026-04-22T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "regulatorio",
+          "label": "CNBV Normatividad",
+          "url": "https://www.cnbv.gob.mx/Normatividad",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🔒"
+        }
+      ]
+    }
+  ],
+
+  "legislativo": [
+    {
+      "id": "LEG-001",
+      "titulo": "Iniciativa de Reforma a la Ley del ISR — Deducciones adicionales para PyMEs del sector digital",
+      "camara": "Diputados",
+      "estado": "En comisión",
+      "etapa": "Comisión de Hacienda y Crédito Público — en dictamen",
+      "fecha": "2026-05-05T00:00:00-06:00",
+      "fuente": "diputados",
+      "relevancia": "alta",
+      "categoria_manual": "legislativo",
+      "mexico_relevante": true,
+      "tags": ["LISR", "deducciones", "PyMEs", "sector digital", "reforma"],
+      "source_url": "https://gaceta.diputados.gob.mx",
+      "source_type": "gaceta",
+      "source_title": "Iniciativa LISR PyMEs — Gaceta Parlamentaria",
+      "published_at": "2026-05-05T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 95,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "sil",
+          "label": "Ver en SIL",
+          "url": "http://sil.gobernacion.gob.mx/portal",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "⚖️"
+        },
+        {
+          "tipo": "pdf",
+          "label": "LISR vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "LEG-002",
+      "titulo": "Minuta: Reforma al Artículo 28 Constitucional — Competencia económica y facturación electrónica obligatoria",
+      "camara": "Senado",
+      "estado": "Dictaminada",
+      "etapa": "Segunda lectura en el Pleno del Senado",
+      "fecha": "2026-05-12T00:00:00-06:00",
+      "fuente": "senado",
+      "relevancia": "alta",
+      "categoria_manual": "legislativo",
+      "mexico_relevante": true,
+      "tags": ["Constitución", "facturación electrónica", "CFDI", "competencia económica"],
+      "source_url": "https://www.senado.gob.mx/65/",
+      "source_type": "senado",
+      "source_title": "Minuta Art. 28 Constitucional — Senado de la República",
+      "published_at": "2026-05-12T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 94,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "CPEUM vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "LEG-003",
+      "titulo": "Iniciativa de Ley de Fomento a la Contabilidad Electrónica para Micronegocios",
+      "camara": "Diputados",
+      "estado": "En comisión",
+      "etapa": "Comisión de Micro, Pequeña y Mediana Empresa",
+      "fecha": "2026-04-28T00:00:00-06:00",
+      "fuente": "diputados",
+      "relevancia": "media",
+      "categoria_manual": "legislativo",
+      "mexico_relevante": true,
+      "tags": ["contabilidad electrónica", "micronegocios", "iniciativa"],
+      "source_url": "https://gaceta.diputados.gob.mx",
+      "source_type": "gaceta",
+      "source_title": "Iniciativa Contabilidad Electrónica — Gaceta Parlamentaria",
+      "published_at": "2026-04-28T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 95,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "sil",
+          "label": "Ver en SIL",
+          "url": "http://sil.gobernacion.gob.mx/portal",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "⚖️"
+        }
+      ]
+    },
+    {
+      "id": "LEG-004",
+      "titulo": "Decreto de reforma a la Ley del IVA — Tasa cero en alimentos procesados de bajo costo",
+      "camara": "Senado",
+      "estado": "Aprobada",
+      "etapa": "Enviada al Ejecutivo Federal para promulgación",
+      "fecha": "2026-04-10T00:00:00-06:00",
+      "fuente": "senado",
+      "relevancia": "alta",
+      "categoria_manual": "legislativo",
+      "mexico_relevante": true,
+      "tags": ["IVA", "tasa cero", "alimentos", "reforma", "aprobada"],
+      "source_url": "https://www.senado.gob.mx/65/transparencia_legislativa",
+      "source_type": "senado",
+      "source_title": "Reforma LIVA Tasa Cero — Senado de la República",
+      "published_at": "2026-04-10T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 94,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "LIVA vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "dof",
+          "label": "Buscar en DOF",
+          "url": "https://www.dof.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📋"
+        }
+      ]
+    },
+    {
+      "id": "LEG-005",
+      "titulo": "Iniciativa sobre régimen fiscal especial para startups tecnológicas — SIL referencia 3847",
+      "camara": "Diputados",
+      "estado": "Archivada",
+      "etapa": "No dictaminada en período ordinario — pendiente reactivación",
+      "fecha": "2026-03-15T00:00:00-06:00",
+      "fuente": "sil",
+      "relevancia": "baja",
+      "categoria_manual": "legislativo",
+      "mexico_relevante": true,
+      "tags": ["régimen fiscal", "startups", "tecnología", "SIL"],
+      "source_url": "http://sil.gobernacion.gob.mx/Busqueda/buscaInteres",
+      "source_type": "sil",
+      "source_title": "SIL Iniciativa 3847 — SEGOB",
+      "published_at": "2026-03-15T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 93,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "gaceta",
+          "label": "Gaceta Parlamentaria",
+          "url": "https://gaceta.diputados.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📑"
+        }
+      ]
+    },
+    {
+      "id": "LEG-006",
+      "titulo": "Iniciativa de Reforma a la Ley Federal del Trabajo — Jornada laboral de 40 horas y su impacto en IMSS",
+      "camara": "Diputados",
+      "estado": "En comisión",
+      "etapa": "Comisión de Trabajo y Previsión Social — análisis de impacto fiscal",
+      "fecha": "2026-05-02T00:00:00-06:00",
+      "fuente": "diputados",
+      "relevancia": "alta",
+      "categoria_manual": "empresarial",
+      "mexico_relevante": true,
+      "tags": ["LFT", "jornada laboral", "IMSS", "cuotas patronales", "nómina"],
+      "source_url": "https://gaceta.diputados.gob.mx",
+      "source_type": "gaceta",
+      "source_title": "Iniciativa LFT Jornada 40 horas — Gaceta Parlamentaria",
+      "published_at": "2026-05-02T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 95,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "LFT vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "IMSS Patrones",
+          "url": "https://www.imss.gob.mx/patrones",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    }
+  ],
+
+  "regulatorio": [
+    {
+      "id": "REG-001",
+      "titulo": "UIF emite nuevas tipologías de riesgo en operaciones con criptoactivos para 2026",
+      "descripcion": "La Unidad de Inteligencia Financiera publicó actualización de tipologías de lavado de dinero vinculadas a criptoactivos. Las entidades financieras, casas de bolsa y actividades vulnerables deben actualizar sus matrices de riesgo antes del 30 de junio de 2026.",
+      "fuente": "uif",
+      "fecha": "2026-05-21T10:00:00-06:00",
+      "tipo": "PLD/Compliance",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["UIF", "PLD", "criptoactivos", "lavado de dinero", "tipologías", "actividades vulnerables"],
+      "source_url": "https://uif.gob.mx/es/UIF/normatividad",
+      "source_type": "pdf_oficial",
+      "source_title": "UIF Tipologías de Riesgo Criptoactivos 2026",
+      "published_at": "2026-05-21T10:00:00-06:00",
+      "verified": true,
+      "trust_score": 96,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Portal UIF",
+          "url": "https://uif.gob.mx",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        },
+        {
+          "tipo": "pdf",
+          "label": "LFPIORPI vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "REG-002",
+      "titulo": "CNBV actualiza capital mínimo para instituciones de financiamiento colectivo (crowdfunding)",
+      "descripcion": "La Comisión Nacional Bancaria y de Valores modificó las disposiciones aplicables a las Instituciones de Financiamiento Colectivo (IFCs). El capital mínimo aumenta de $1.5 MDP a $3.0 MDP. Plazo para acreditación: 90 días naturales a partir de la publicación en DOF.",
+      "fuente": "cnbv",
+      "fecha": "2026-05-17T00:00:00-06:00",
+      "tipo": "Regulación financiera",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["CNBV", "crowdfunding", "IFC", "capital mínimo", "fintech", "regulación"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "Resolución DOF 17/05/2026 — Capital Mínimo IFCs CNBV",
+      "published_at": "2026-05-17T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "regulatorio",
+          "label": "CNBV Normatividad",
+          "url": "https://www.cnbv.gob.mx/Normatividad",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🔒"
+        }
+      ]
+    },
+    {
+      "id": "REG-003",
+      "titulo": "CONDUSEF emite lineamientos para transparencia en comisiones de crédito PYME",
+      "descripcion": "La CONDUSEF emitió circular dirigida a instituciones de crédito sobre requisitos de transparencia en la información de comisiones, CAT y tasas aplicables a créditos para PYMES. Entrará en vigor el 1 de septiembre de 2026.",
+      "fuente": "condusef",
+      "fecha": "2026-05-12T00:00:00-06:00",
+      "tipo": "Circular",
+      "categoria_manual": "legal",
+      "mexico_relevante": true,
+      "tags": ["CONDUSEF", "PYME", "crédito", "comisiones", "CAT", "transparencia"],
+      "source_url": "https://www.gob.mx/condusef/prensa",
+      "source_type": "comunicado_shcp",
+      "source_title": "Circular CONDUSEF — Lineamientos PYME",
+      "published_at": "2026-05-12T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 90,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Portal CONDUSEF",
+          "url": "https://www.gob.mx/condusef",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "REG-004",
+      "titulo": "IMCP publica guía práctica de cumplimiento antilavado para contadores independientes",
+      "descripcion": "El IMCP emitió una guía actualizada sobre las obligaciones de contadores públicos independientes en materia de prevención de lavado de dinero. Incluye formatos de evaluación de clientes, reportes de operaciones inusuales y procedimientos para actividades vulnerables del artículo 17 de la LFPIORPI.",
+      "fuente": "imcp",
+      "fecha": "2026-05-07T09:00:00-06:00",
+      "tipo": "Guía técnica",
+      "categoria_manual": "contable",
+      "mexico_relevante": true,
+      "tags": ["IMCP", "PLD", "antilavado", "LFPIORPI", "actividades vulnerables", "contadores"],
+      "source_url": "https://imcp.org.mx/noticias/",
+      "source_type": "imcp",
+      "source_title": "Boletín Técnico IMCP — Cumplimiento PLD Contadores",
+      "published_at": "2026-05-07T09:00:00-06:00",
+      "verified": true,
+      "trust_score": 88,
+      "tipo_contenido": "analisis_numera",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "LFPIORPI vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "regulatorio",
+          "label": "UIF Actividades vulnerables",
+          "url": "https://uif.gob.mx/es/UIF/actividadesVulnerables",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🔒"
+        }
+      ]
+    }
+  ],
+
+  "noticias": [
+    {
+      "id": "NOT-001",
+      "titulo": "SAT amplía plazo para migración al CFDI 4.0 en complementos de pago — 90 días adicionales",
+      "fuente": "sat",
+      "fecha": "2026-05-21T10:30:00-06:00",
+      "resumen": "El Servicio de Administración Tributaria publicó prórroga de 90 días para que los contribuyentes migren sus sistemas al nuevo esquema de complementos de pago en CFDI 4.0. La nueva fecha límite es el 30 de septiembre de 2026. Los complementos emitidos en formato 3.3 no serán válidos después de esa fecha.",
+      "categoria": "Fiscal",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["CFDI 4.0", "SAT", "complementos de pago", "prórroga"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "DOF — Prórroga CFDI 4.0 Complemento de Pago",
+      "published_at": "2026-05-21T10:30:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        },
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "NOT-002",
+      "titulo": "IMCP: Contadores deben certificarse en reportes ESG e ISSB para 2027",
+      "fuente": "imcp",
+      "fecha": "2026-05-20T09:00:00-06:00",
+      "resumen": "El IMCP lanzó programa de certificación en reportes ESG (ambiental, social y gobernanza) alineado con los estándares ISSB S1 y S2. La certificación será requisito obligatorio para contadores que auditen a empresas listadas en la BMV a partir de 2027.",
+      "categoria": "Contable",
+      "categoria_manual": "contable",
+      "mexico_relevante": true,
+      "tags": ["IMCP", "ESG", "ISSB", "certificación", "BMV", "contadores"],
+      "source_url": "https://imcp.org.mx/servicios/educacion-continua/",
+      "source_type": "imcp",
+      "source_title": "IMCP Educación Continua — Certificación ESG",
+      "published_at": "2026-05-20T09:00:00-06:00",
+      "verified": true,
+      "trust_score": 88,
+      "tipo_contenido": "analisis_numera",
+      "links": [
+        {
+          "tipo": "nif",
+          "label": "IMCP Normatividad",
+          "url": "https://imcp.org.mx/normatividad/normas-de-informacion-financiera/",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📊"
+        }
+      ]
+    },
+    {
+      "id": "NOT-003",
+      "titulo": "Inflación en México cierra abril 2026 en 3.8% — Impacto en ajuste de salario mínimo y UMA",
+      "fuente": "gnews",
+      "fecha": "2026-05-09T08:00:00-06:00",
+      "resumen": "El Banco de México reportó inflación general del 3.8% anual en abril. El dato impacta el cálculo de la UMA, la actualización de tablas de deducciones personales y el ajuste del salario mínimo para la segunda mitad del año. Los contadores deben actualizar los factores en sus sistemas de nómina.",
+      "categoria": "Financiero",
+      "categoria_manual": "financiero",
+      "mexico_relevante": true,
+      "tags": ["inflación", "INPC", "UMA", "salario mínimo", "Banxico", "nómina"],
+      "source_url": "https://www.banxico.org.mx/publicaciones-y-prensa/informes-trimestrales/",
+      "source_type": "banxico",
+      "source_title": "Banxico Informe de Inflación y Precios",
+      "published_at": "2026-05-09T08:00:00-06:00",
+      "verified": true,
+      "trust_score": 97,
+      "tipo_contenido": "resumen_ia",
+      "links": [
+        {
+          "tipo": "noticias",
+          "label": "INEGI — INPC",
+          "url": "https://www.inegi.org.mx/temas/inpc/",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📰"
+        }
+      ]
+    },
+    {
+      "id": "NOT-004",
+      "titulo": "Hacienda reporta recaudación récord de ISR en primer trimestre 2026 — 12.4% sobre meta",
+      "fuente": "gnews",
+      "fecha": "2026-05-05T07:00:00-06:00",
+      "resumen": "La SHCP informó que la recaudación del ISR en enero-marzo 2026 superó en 12.4% la meta original. El incremento se atribuye a la ampliación del padrón de contribuyentes en el RESICO, mayor uso de inteligencia artificial del SAT para detección de discrepancias y el operativo de regularización voluntaria.",
+      "categoria": "Fiscal",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["ISR", "SHCP", "recaudación", "RESICO", "SAT", "fiscalización"],
+      "source_url": "https://www.gob.mx/hacienda/prensa",
+      "source_type": "comunicado_shcp",
+      "source_title": "Comunicado de Prensa SHCP — Recaudación 1T",
+      "published_at": "2026-05-05T07:00:00-06:00",
+      "verified": true,
+      "trust_score": 97,
+      "tipo_contenido": "resumen_ia",
+      "links": [
+        {
+          "tipo": "noticias",
+          "label": "Google News — SAT",
+          "url": "https://news.google.com/search?q=recaudacion+ISR+SHCP+Mexico&hl=es-419&gl=MX&ceid=MX:es-419",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📰"
+        }
+      ]
+    },
+    {
+      "id": "NOT-005",
+      "titulo": "Nuevas reglas buzón tributario: notificaciones SAT exclusivamente digitales desde julio 2026",
+      "fuente": "sat",
+      "fecha": "2026-04-28T11:00:00-06:00",
+      "resumen": "A partir del 1 de julio de 2026, todas las notificaciones del SAT a contribuyentes del régimen general se realizarán exclusivamente a través del buzón tributario. El plazo de respuesta se amplía a 20 días hábiles. Los contribuyentes deben verificar que su buzón esté activo y actualizado.",
+      "categoria": "Fiscal",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["buzón tributario", "SAT", "notificaciones", "digitales", "régimen general"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "DOF — Reglas de Operación del Buzón Tributario",
+      "published_at": "2026-04-28T11:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        },
+        {
+          "tipo": "pdf",
+          "label": "CFF vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    },
+    {
+      "id": "NOT-006",
+      "titulo": "RESICO personas físicas: límite de ingresos sube a $4.2 MDP para ejercicio 2027",
+      "fuente": "dof",
+      "fecha": "2026-04-15T00:00:00-06:00",
+      "resumen": "El DOF publicó reforma al Régimen Simplificado de Confianza (RESICO): el tope de ingresos anuales para personas físicas sube de $3.5 a $4.2 millones de pesos a partir del ejercicio fiscal 2027. Los contribuyentes que superen ese monto en 2026 deberán migrar al régimen de actividad empresarial.",
+      "categoria": "Fiscal",
+      "categoria_manual": "fiscal",
+      "mexico_relevante": true,
+      "tags": ["RESICO", "personas físicas", "límite de ingresos", "régimen fiscal", "DOF"],
+      "source_url": "https://www.dof.gob.mx",
+      "source_type": "dof",
+      "source_title": "DOF 15/04/2026 — Decreto de reforma al RESICO",
+      "published_at": "2026-04-15T00:00:00-06:00",
+      "verified": true,
+      "trust_score": 99,
+      "tipo_contenido": "documento_oficial",
+      "links": [
+        {
+          "tipo": "pdf",
+          "label": "LISR vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        },
+        {
+          "tipo": "oficial",
+          "label": "Ver en SHCP",
+          "url": "https://www.gob.mx/hacienda",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        }
+      ]
+    },
+    {
+      "id": "NOT-007",
+      "titulo": "BlackRock amplía ETF de Bitcoin de forma institucional — Impacto regulatorio y fiscal",
+      "fuente": "gnews",
+      "fecha": "2026-05-18T14:00:00-06:00",
+      "resumen": "BlackRock anunció la expansión de su ETF de Bitcoin institucional. El crecimiento genera preguntas regulatorias y fiscales para empresas mexicanas que evalúan integrar criptoactivos a sus tesorerías corporativas. La CNBV and el SAT aún no emiten criterios específicos de tratamiento fiscal.",
+      "categoria": "Cripto",
+      "categoria_manual": "cripto",
+      "mexico_relevante": true,
+      "tags": ["BlackRock", "ETF Bitcoin", "institucional", "CNBV", "SAT", "tesorería corporativa"],
+      "source_url": "https://news.google.com/search?q=BlackRock+ETF+Bitcoin+Mexico+CNBV+fiscal&hl=es-419&gl=MX&ceid=MX:es-419",
+      "source_type": "sin_documento",
+      "source_title": "Google News — Análisis ETF Bitcoin",
+      "published_at": "2026-05-18T14:00:00-06:00",
+      "verified": false,
+      "trust_score": 45,
+      "tipo_contenido": "resumen_ia",
+      "links": [
+        {
+          "tipo": "regulatorio",
+          "label": "CNBV Normatividad",
+          "url": "https://www.cnbv.gob.mx/Normatividad",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🔒"
+        }
+      ]
+    },
+    {
+      "id": "NOT-008",
+      "titulo": "Nearshoring impulsa reconfiguración fiscal: empresas deben revisar REPSE y estructuras de personal",
+      "fuente": "gnews",
+      "fecha": "2026-05-13T09:00:00-06:00",
+      "resumen": "El auge del nearshoring en México genera nuevos retos fiscales y laborales. Las empresas extranjeras que establecen operaciones en México deben revisar sus obligaciones en materia de REPSE, cumplimiento del régimen de subcontratación laboral y sus implicaciones en ISR, IVA e IMSS.",
+      "categoria": "Empresarial",
+      "categoria_manual": "empresarial",
+      "mexico_relevante": true,
+      "tags": ["nearshoring", "REPSE", "subcontratación", "ISR", "IVA", "IMSS", "laboral"],
+      "source_url": "https://news.google.com/search?q=nearshoring+Mexico+fiscal+laboral+REPSE&hl=es-419&gl=MX&ceid=MX:es-419",
+      "source_type": "sin_documento",
+      "source_title": "Google News — Nearshoring",
+      "published_at": "2026-05-13T09:00:00-06:00",
+      "verified": false,
+      "trust_score": 45,
+      "tipo_contenido": "resumen_ia",
+      "links": [
+        {
+          "tipo": "oficial",
+          "label": "IMSS Patrones",
+          "url": "https://www.imss.gob.mx/patrones",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "🏛️"
+        },
+        {
+          "tipo": "pdf",
+          "label": "LFT vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+          "verificado": true,
+          "es_publico": true,
+          "icono": "📄"
+        }
+      ]
+    }
+  ]
+}

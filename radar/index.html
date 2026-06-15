@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Radar Fiscal Inteligente v2 | NUMERA</title>
+<meta name="description" content="Sistema profesional de vigilancia fiscal, contable, legal y regulatoria con clasificación semántica inteligente. NUMERA Radar Fiscal." />
+<meta name="robots" content="index, follow" />
+
+<meta property="og:title"       content="Radar Fiscal Inteligente | NUMERA" />
+<meta property="og:description" content="Monitoreo fiscal, DOF, legislativo, regulatorio y estratégico con scoring de relevancia y filtros avanzados." />
+<meta property="og:image"       content="https://servicios-contables-numera.github.io/numera/logo-preview.png" />
+<meta property="og:url"         content="https://servicios-contables-numera.github.io/numera/radar/" />
+<meta property="og:type"        content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="radar.css" />
+
+</head>
+
+<body>
+
+<!-- GLOW ORBS -->
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+<div class="glow glow3"></div>
+
+<!-- ═══════════════════════════════════════
+     TOPNAV
+     ═══════════════════════════════════════ -->
+<header>
+<nav class="topnav" role="navigation" aria-label="Navegación principal Radar Fiscal">
+
+  <div class="topnav-left">
+    <a href="../" class="nav-logo" aria-label="Inicio NUMERA">
+      <img src="../02.LETRAS_NUMERA.svg" alt="NUMERA" />
+    </a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <nav class="nav-breadcrumb" aria-label="Ruta de navegación">
+      <a href="../">Inicio</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <span class="current" aria-current="page">Radar Fiscal Inteligente</span>
+    </nav>
+  </div>
+
+  <div class="topnav-center">
+    <div class="search-wrap" role="search">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <label for="search-input" class="sr-only">Buscar en el Radar Fiscal</label>
+      <input
+        type="search"
+        id="search-input"
+        name="q"
+        placeholder="Buscar: SAT, CFDI, ISR, reforma, NIF, IMSS…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+  </div>
+
+  <div class="topnav-right">
+    <span class="last-updated" id="last-updated" aria-live="polite">Cargando…</span>
+    <button id="btn-refresh" class="btn-refresh" type="button" aria-label="Actualizar datos">
+      ↻ Actualizar
+    </button>
+  </div>
+
+</nav>
+</header>
+
+<!-- ═══════════════════════════════════════
+     HERO STRIP
+     ═══════════════════════════════════════ -->
+<div class="radar-hero-strip">
+  <h1>Radar Fiscal Inteligente</h1>
+  <p>
+    Sistema profesional de vigilancia fiscal, contable, legal y regulatoria.
+    Clasificación semántica automática · Scoring de relevancia 0–100 · Enfoque México.
+  </p>
+  <div class="score-stats-badge" id="score-stats" aria-live="polite">
+    📊 Calculando relevancia…
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     KPI BAR — 6 bloques
+     ═══════════════════════════════════════ -->
+<div class="kpi-wrapper">
+  <div class="kpi-bar" id="kpi-bar" aria-label="Indicadores clave del Radar">
+    <div class="kpi-block kpi-alertas skeleton" style="height:88px;"></div>
+    <div class="kpi-block kpi-dof      skeleton" style="height:88px;"></div>
+    <div class="kpi-block kpi-leg      skeleton" style="height:88px;"></div>
+    <div class="kpi-block kpi-noticias skeleton" style="height:88px;"></div>
+    <div class="kpi-block kpi-alertas  skeleton" style="height:88px;"></div>
+    <div class="kpi-block kpi-dof      skeleton" style="height:88px;"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     LAYOUT: SIDEBAR + MAIN
+     ═══════════════════════════════════════ -->
+<div class="radar-layout">
+
+  <!-- ──────────────────────────────────
+       SIDEBAR v2
+       ────────────────────────────────── -->
+  <aside class="sidebar" role="complementary" aria-label="Controles del Radar Fiscal">
+
+    <!-- VISTAS / SECCIONES -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Vistas</div>
+
+      <button class="filter-btn active" data-filter-vista="todo" id="filter-todo" type="button">
+        <span class="fi-icon">📡</span> Todo el Radar
+        <span class="filter-count" id="count-side-todo">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="vigilancia" id="filter-vigilancia" type="button">
+        <span class="fi-icon">🚨</span> Vigilancia Fiscal
+        <span class="filter-count" id="count-side-vigilancia">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="alertas" id="filter-alertas" type="button">
+        <span class="fi-icon">⚡</span> Alertas críticas
+        <span class="filter-count" id="count-side-alertas">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="dof" id="filter-dof" type="button">
+        <span class="fi-icon">📋</span> Publicaciones oficiales
+        <span class="filter-count" id="count-side-dof">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="legislativo" id="filter-legislativo" type="button">
+        <span class="fi-icon">⚖️</span> Seguimiento legislativo
+        <span class="filter-count" id="count-side-legislativo">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="analisis" id="filter-analisis" type="button">
+        <span class="fi-icon">📈</span> Análisis estratégico
+      </button>
+
+      <button class="filter-btn" data-filter-vista="noticias" id="filter-noticias" type="button">
+        <span class="fi-icon">📰</span> Noticias estratégicas
+        <span class="filter-count" id="count-side-noticias">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="regulatorio" id="filter-regulatorio" type="button">
+        <span class="fi-icon">🔒</span> Cambios regulatorios
+        <span class="filter-count" id="count-side-regulatorio">—</span>
+      </button>
+
+      <button class="filter-btn" data-filter-vista="fuentes" id="filter-fuentes" type="button">
+        <span class="fi-icon">🔗</span> Estado de fuentes
+      </button>
+    </div>
+
+    <!-- TAXONOMÍA DE CATEGORÍAS -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Categoría</div>
+
+      <button class="filter-btn active" data-filter-cat="todas" type="button">
+        <span class="fi-icon">🗂️</span> Todas las categorías
+      </button>
+      <button class="filter-btn" data-filter-cat="fiscal" type="button">
+        <span class="fi-icon">🏛️</span> Fiscal
+      </button>
+      <button class="filter-btn" data-filter-cat="contable" type="button">
+        <span class="fi-icon">📊</span> Contable
+      </button>
+      <button class="filter-btn" data-filter-cat="legal" type="button">
+        <span class="fi-icon">⚖️</span> Legal y regulatorio
+      </button>
+      <button class="filter-btn" data-filter-cat="legislativo" type="button">
+        <span class="fi-icon">🏛️</span> Legislativo
+      </button>
+      <button class="filter-btn" data-filter-cat="financiero" type="button">
+        <span class="fi-icon">📈</span> Financiero estratégico
+      </button>
+      <button class="filter-btn" data-filter-cat="empresarial" type="button">
+        <span class="fi-icon">🏢</span> Empresarial
+      </button>
+      <button class="filter-btn" data-filter-cat="cripto" type="button">
+        <span class="fi-icon">₿</span> Cripto y Fintech
+      </button>
+    </div>
+
+    <!-- IMPACTO -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Nivel de impacto</div>
+      <button class="impact-filter-btn active" data-filter-impacto="todos" type="button">
+        🔵 Todos los niveles
+      </button>
+      <button class="impact-filter-btn" data-filter-impacto="alto" type="button">
+        🔴 Alto — Acción inmediata
+      </button>
+      <button class="impact-filter-btn" data-filter-impacto="medio" type="button">
+        🟡 Medio — Revisión prioritaria
+      </button>
+      <button class="impact-filter-btn" data-filter-impacto="bajo" type="button">
+        🟢 Bajo — Informativo
+      </button>
+    </div>
+
+    <!-- TOGGLE SOLO MÉXICO -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Relevancia geográfica</div>
+      <div class="toggle-wrap">
+        <span>🇲🇽 Solo México</span>
+        <label class="toggle-switch" for="toggle-mx" aria-label="Mostrar solo contenido relevante para México">
+          <input type="checkbox" id="toggle-mx" />
+          <span class="toggle-track"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- SCORE MÍNIMO -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Score mínimo de relevancia</div>
+      <div class="slider-wrap">
+        <div class="slider-label">
+          <span>Umbral</span>
+          <strong id="score-slider-val">15</strong>
+        </div>
+        <input
+          type="range"
+          id="score-slider"
+          min="0" max="80" value="15" step="5"
+          aria-label="Umbral mínimo de score de relevancia"
+        />
+        <div style="display:flex;justify-content:space-between;font-size:.64rem;color:var(--muted2);margin-top:4px;">
+          <span>0 permisivo</span>
+          <span>80 estricto</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORDENAR POR -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Ordenar por</div>
+      <div class="sort-wrap">
+        <select id="sort-select" class="sort-select" aria-label="Criterio de ordenamiento">
+          <option value="fecha">📅 Fecha (reciente primero)</option>
+          <option value="score">📊 Score de relevancia</option>
+          <option value="impacto">🔴 Nivel de impacto</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- FUENTES -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Fuentes monitoreadas</div>
+
+      <div class="source-pill-sidebar"><span class="source-dot dof"></span> DOF — Diario Oficial</div>
+      <div class="source-pill-sidebar"><span class="source-dot sat"></span> SAT</div>
+      <div class="source-pill-sidebar"><span class="source-dot shcp"></span> SHCP</div>
+      <div class="source-pill-sidebar"><span class="source-dot banxico"></span> Banco de México</div>
+      <div class="source-pill-sidebar"><span class="source-dot sil"></span> SIL — Inf. Legislativa</div>
+      <div class="source-pill-sidebar"><span class="source-dot diputados"></span> Gaceta Parlamentaria</div>
+      <div class="source-pill-sidebar"><span class="source-dot senado"></span> Transparencia Senado</div>
+      <div class="source-pill-sidebar"><span class="source-dot cnbv"></span> CNBV</div>
+      <div class="source-pill-sidebar"><span class="source-dot uif"></span> UIF</div>
+      <div class="source-pill-sidebar"><span class="source-dot imcp"></span> IMCP</div>
+      <div class="source-pill-sidebar"><span class="source-dot gnews"></span> Google News</div>
+    </div>
+
+    <!-- LEYENDA SCORING -->
+    <div class="sidebar-section">
+      <div class="sidebar-label">Score de relevancia</div>
+      <div style="padding:0 4px;display:flex;flex-direction:column;gap:5px;">
+        <div class="legend-row"><span class="legend-dot" style="background:#FF4D6D;box-shadow:0 0 6px rgba(255,77,109,.5);"></span> 70–100 · Impacto alto</div>
+        <div class="legend-row"><span class="legend-dot" style="background:#FACC15;"></span> 35–69 · Impacto medio</div>
+        <div class="legend-row"><span class="legend-dot" style="background:#22C55E;"></span> 15–34 · Impacto bajo</div>
+        <div class="legend-row" style="opacity:.5;font-size:.72rem;padding-left:18px;">
+          = Keywords + Fuente + Recencia + Whitelist
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ──────────────────────────────────
+       MAIN CONTENT — 7 VISTAS
+       ────────────────────────────────── -->
+  <main class="main-content" id="main-content" role="main">
+
+    <!-- ① VIGILANCIA FISCAL -->
+    <section class="dashboard-section" id="dash-vigilancia" aria-labelledby="h2-vigilancia">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">🚨</div>
+          <h2 id="h2-vigilancia">Vigilancia Fiscal</h2>
+          <span class="section-count" id="count-vigilancia">—</span>
+        </div>
+        <a href="https://www.sat.gob.mx/noticias" target="_blank" rel="noopener" class="section-link">
+          SAT →
+        </a>
+      </div>
+      <div id="section-vigilancia" aria-live="polite">
+        <div class="alerts-grid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② ALERTAS CRÍTICAS -->
+    <section class="dashboard-section" id="dash-alertas" aria-labelledby="h2-alertas">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">⚡</div>
+          <h2 id="h2-alertas">Alertas críticas</h2>
+          <span class="section-count" id="count-alertas">—</span>
+        </div>
+        <a href="https://www.sat.gob.mx" target="_blank" rel="noopener" class="section-link">
+          Ver SAT →
+        </a>
+      </div>
+      <div id="section-alertas" aria-live="polite">
+        <div class="alerts-grid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ PUBLICACIONES OFICIALES -->
+    <section class="dashboard-section" id="dash-dof" aria-labelledby="h2-dof">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">📋</div>
+          <h2 id="h2-dof">Publicaciones oficiales</h2>
+          <span class="section-count" id="count-dof">—</span>
+        </div>
+        <a href="https://www.dof.gob.mx" target="_blank" rel="noopener" class="section-link">
+          Ir al DOF →
+        </a>
+      </div>
+      <div id="section-dof" aria-live="polite">
+        <div class="dof-list">
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ④ SEGUIMIENTO LEGISLATIVO -->
+    <section class="dashboard-section" id="dash-legislativo" aria-labelledby="h2-leg">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">⚖️</div>
+          <h2 id="h2-leg">Seguimiento legislativo</h2>
+          <span class="section-count" id="count-legislativo">—</span>
+        </div>
+        <a href="http://sil.gobernacion.gob.mx" target="_blank" rel="noopener" class="section-link">
+          Ver SIL →
+        </a>
+      </div>
+      <div id="section-legislativo" aria-live="polite">
+        <div class="leg-grid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ ANÁLISIS ESTRATÉGICO -->
+    <section class="dashboard-section" id="dash-analisis" aria-labelledby="h2-analisis">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">📈</div>
+          <h2 id="h2-analisis">Análisis estratégico</h2>
+          <span class="section-count" id="count-analisis">—</span>
+        </div>
+        <a href="https://www.banxico.org.mx" target="_blank" rel="noopener" class="section-link">
+          Banxico →
+        </a>
+      </div>
+      <div id="section-analisis" aria-live="polite">
+        <div class="news-grid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ NOTICIAS ESTRATÉGICAS -->
+    <section class="dashboard-section" id="dash-noticias" aria-labelledby="h2-news">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">📰</div>
+          <h2 id="h2-news">Noticias estratégicas</h2>
+          <span class="section-count" id="count-noticias">—</span>
+        </div>
+        <a href="https://news.google.com/search?q=fiscal+mexico&hl=es-419" target="_blank" rel="noopener" class="section-link">
+          Google News →
+        </a>
+      </div>
+      <div id="section-noticias" aria-live="polite">
+        <div class="news-grid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑦ CAMBIOS REGULATORIOS -->
+    <section class="dashboard-section" id="dash-regulatorio" aria-labelledby="h2-reg">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">🔒</div>
+          <h2 id="h2-reg">Cambios regulatorios</h2>
+          <span class="section-count" id="count-regulatorio">—</span>
+        </div>
+        <a href="https://uif.gob.mx" target="_blank" rel="noopener" class="section-link">
+          UIF →
+        </a>
+      </div>
+      <div id="section-regulatorio" aria-live="polite">
+        <div class="dof-list">
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:80px;border-radius:16px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑧ ESTADO DE FUENTES -->
+    <section class="dashboard-section" id="dash-fuentes" aria-labelledby="h2-fuentes">
+      <div class="section-header">
+        <div class="section-title-text">
+          <div class="section-icon" aria-hidden="true">🔗</div>
+          <h2 id="h2-fuentes">Estado de fuentes</h2>
+        </div>
+      </div>
+      <div id="section-fuentes" aria-live="polite">
+        <div class="sources-grid">
+          <div class="skeleton-card skeleton" style="height:90px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:90px;border-radius:16px;"></div>
+          <div class="skeleton-card skeleton" style="height:90px;border-radius:16px;"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div><!-- /radar-layout -->
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer class="radar-footer" role="contentinfo">
+  <span>
+    <span class="footer-brand">NUMERA</span> · Radar Fiscal Inteligente v2
+    · Clasificación semántica automática · Datos de ejemplo
+  </span>
+  <span>
+    <a href="../">← Inicio</a> &nbsp;·&nbsp;
+    <a href="https://www.sat.gob.mx" target="_blank" rel="noopener">SAT</a> &nbsp;·&nbsp;
+    <a href="https://www.dof.gob.mx" target="_blank" rel="noopener">DOF</a> &nbsp;·&nbsp;
+    <a href="https://www.banxico.org.mx" target="_blank" rel="noopener">Banxico</a> &nbsp;·&nbsp;
+    <a href="https://imcp.org.mx" target="_blank" rel="noopener">IMCP</a>
+  </span>
+</footer>
+
+<script src="radar.js"></script>
+
+</body>
+</html>

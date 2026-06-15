@@ -1,0 +1,37 @@
+[
+  {
+    "id": "SEN-5064800",
+    "title": "Que reforma y adiciona diversas disposiciones de la Ley Federal del Trabajo.",
+    "published_at": "2026-04-14T00:00:00-06:00",
+    "source_url": "http://sil.gobernacion.gob.mx/Librerias/pp_ReporteSeguimiento.php?Seguimiento=5064947&Asunto=5064800",
+    "source_type": "senado",
+    "source_title": "Asunto Legislativo Senado SIL-5064800",
+    "verified": true,
+    "trust_score": 100,
+    "summary": "La iniciativa tiene por objeto proteger las fuentes de trabajo de las mujeres víctimas de violencia que se vean en la necesidad de resguardarse en refugios de protección. Para ello propone: 1) señalar que será causa de suspensión temporal de las obligaciones de prestar el serv...",
+    "camara": "Cámara de Senadores",
+    "estado": "Pendiente en comisión(es) de origen",
+    "etapa": "Se turnó a comisiones unidas: Estudios Legislativos, Primera de Cámara de Senadores. Dictamina.",
+    "relevancia": "Media",
+    "links": [
+      {
+        "tipo": "senado",
+        "label": "Ver en Senado (SIL)",
+        "url": "http://sil.gobernacion.gob.mx/Librerias/pp_ReporteSeguimiento.php?Seguimiento=5064947&Asunto=5064800",
+        "verificado": true,
+        "es_publico": true,
+        "icono": "🏛️"
+      }
+    ],
+    "category": "fiscal",
+    "impact": "alto",
+    "keywords": [
+      "ley federal del trabajo",
+      "esg",
+      "ley federal",
+      "iva",
+      "iniciativa"
+    ],
+    "score": 85
+  }
+]

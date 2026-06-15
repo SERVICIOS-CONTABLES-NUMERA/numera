@@ -1,0 +1,287 @@
+{
+  "version": "1.0.0",
+  "descripcion": "Catálogo de fuentes oficiales canónicas verificadas para el Radar Fiscal Inteligente NUMERA",
+  "nota": "Solo se incluyen URLs de acceso público confirmado. Sin rutas inventadas ni páginas con login.",
+
+  "fuentes": {
+
+    "sat": {
+      "nombre": "Servicio de Administración Tributaria",
+      "url_base": "https://www.sat.gob.mx",
+      "confianza": 98,
+      "tier": 1,
+      "tipo_fuente": "oficial_primaria",
+      "nota_acceso": "Portal público. Para evitar bloqueos Cloudflare (403/404) y requerimientos de autenticación, se omiten URLs profundas de trámites y consultas.",
+      "urls": {
+        "inicio":       "https://www.sat.gob.mx"
+      }
+    },
+
+    "dof": {
+      "nombre": "Diario Oficial de la Federación",
+      "url_base": "https://www.dof.gob.mx",
+      "confianza": 99,
+      "tier": 1,
+      "tipo_fuente": "oficial_primaria",
+      "nota_acceso": "Portal completamente público. URLs de ediciones específicas son dinámicas por fecha.",
+      "urls": {
+        "inicio":   "https://www.dof.gob.mx",
+        "busqueda": "https://www.dof.gob.mx/index.php",
+        "recientes":"https://www.dof.gob.mx"
+      }
+    },
+
+    "shcp": {
+      "nombre": "Secretaría de Hacienda y Crédito Público",
+      "url_base": "https://www.gob.mx/hacienda",
+      "confianza": 97,
+      "tier": 1,
+      "tipo_fuente": "oficial_primaria",
+      "nota_acceso": "Portal público gob.mx.",
+      "urls": {
+        "inicio":       "https://www.gob.mx/hacienda",
+        "prensa":       "https://www.gob.mx/hacienda/prensa",
+        "presupuesto":  "https://www.pef.hacienda.gob.mx",
+        "informes":     "https://www.gob.mx/hacienda/documentos"
+      }
+    },
+
+    "banxico": {
+      "nombre": "Banco de México",
+      "url_base": "https://www.banxico.org.mx",
+      "confianza": 97,
+      "tier": 1,
+      "tipo_fuente": "oficial_primaria",
+      "nota_acceso": "Portal completamente público.",
+      "urls": {
+        "inicio":              "https://www.banxico.org.mx",
+        "politica_monetaria":  "https://www.banxico.org.mx/publicaciones-y-prensa/anuncios-de-las-decisiones-de-politica-monetaria/",
+        "inflacion":           "https://www.banxico.org.mx/publicaciones-y-prensa/informes-trimestrales/",
+        "tipo_cambio":         "https://www.banxico.org.mx/tipcamb/main.do?page=tip&idioma=sp",
+        "comunicados":         "https://www.banxico.org.mx/publicaciones-y-prensa/comunicados/"
+      }
+    },
+
+    "sil": {
+      "nombre": "Sistema de Información Legislativa — SEGOB",
+      "url_base": "http://sil.gobernacion.gob.mx",
+      "confianza": 93,
+      "tier": 2,
+      "tipo_fuente": "oficial_legislativa",
+      "nota_acceso": "Portal público. URLs de iniciativas específicas contienen parámetros dinámicos.",
+      "urls": {
+        "inicio":     "http://sil.gobernacion.gob.mx/portal",
+        "busqueda":   "http://sil.gobernacion.gob.mx/Busqueda/buscaInteres",
+        "leyes":      "http://sil.gobernacion.gob.mx/portal/Legislacion/leyes"
+      }
+    },
+
+    "diputados": {
+      "nombre": "Cámara de Diputados — Gaceta Parlamentaria",
+      "url_base": "https://www.diputados.gob.mx",
+      "url_gaceta": "https://gaceta.diputados.gob.mx",
+      "confianza": 95,
+      "tier": 2,
+      "tipo_fuente": "oficial_legislativa",
+      "nota_acceso": "Portal completamente público. PDFs de leyes vigentes en LeyesBiblio.",
+      "urls": {
+        "inicio":     "https://www.diputados.gob.mx",
+        "gaceta":     "https://gaceta.diputados.gob.mx",
+        "leyes":      "https://www.diputados.gob.mx/LeyesBiblio/",
+        "pdf_lisr":   "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+        "pdf_liva":   "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+        "pdf_cff":    "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+        "pdf_lft":    "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+        "pdf_lss":    "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+        "pdf_cpeum":  "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf",
+        "pdf_lfpiorpi":"https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf",
+        "pdf_lfintech":"https://www.diputados.gob.mx/LeyesBiblio/pdf/LTF.pdf"
+      }
+    },
+
+    "senado": {
+      "nombre": "Senado de la República",
+      "url_base": "https://www.senado.gob.mx",
+      "confianza": 94,
+      "tier": 2,
+      "tipo_fuente": "oficial_legislativa",
+      "nota_acceso": "Portal público.",
+      "urls": {
+        "inicio":         "https://www.senado.gob.mx",
+        "legislacion":    "https://www.senado.gob.mx/65/",
+        "transparencia":  "https://www.senado.gob.mx/65/transparencia_legislativa",
+        "comisiones":     "https://www.senado.gob.mx/65/comisiones"
+      }
+    },
+
+    "cnbv": {
+      "nombre": "Comisión Nacional Bancaria y de Valores",
+      "url_base": "https://www.gob.mx/cnbv",
+      "confianza": 95,
+      "tier": 2,
+      "tipo_fuente": "oficial_regulatoria",
+      "nota_acceso": "Portal público en gob.mx. Normatividad disponible en cnbv.gob.mx.",
+      "urls": {
+        "inicio":        "https://www.gob.mx/cnbv",
+        "normatividad":  "https://www.cnbv.gob.mx/Normatividad/Paginas/Disposiciones.aspx",
+        "comunicados":   "https://www.gob.mx/cnbv/prensa",
+        "circular":      "https://www.cnbv.gob.mx/Normatividad"
+      }
+    },
+
+    "uif": {
+      "nombre": "Unidad de Inteligencia Financiera — SHCP",
+      "url_base": "https://uif.gob.mx",
+      "confianza": 96,
+      "tier": 2,
+      "tipo_fuente": "oficial_regulatoria",
+      "nota_acceso": "Portal público.",
+      "urls": {
+        "inicio":       "https://uif.gob.mx",
+        "normatividad": "https://uif.gob.mx/es/UIF/normatividad",
+        "actividades":  "https://uif.gob.mx/es/UIF/actividadesVulnerables"
+      }
+    },
+
+    "condusef": {
+      "nombre": "Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros",
+      "url_base": "https://www.gob.mx/condusef",
+      "confianza": 90,
+      "tier": 2,
+      "tipo_fuente": "oficial_regulatoria",
+      "nota_acceso": "Portal público gob.mx.",
+      "urls": {
+        "inicio":      "https://www.gob.mx/condusef",
+        "comunicados": "https://www.gob.mx/condusef/prensa"
+      }
+    },
+
+    "cofece": {
+      "nombre": "Comisión Federal de Competencia Económica",
+      "url_base": "https://www.cofece.mx",
+      "confianza": 90,
+      "tier": 2,
+      "tipo_fuente": "oficial_regulatoria",
+      "nota_acceso": "Portal público.",
+      "urls": {
+        "inicio": "https://www.cofece.mx",
+        "resoluciones": "https://www.cofece.mx/resoluciones/"
+      }
+    },
+
+    "imcp": {
+      "nombre": "Instituto Mexicano de Contadores Públicos",
+      "url_base": "https://imcp.org.mx",
+      "confianza": 88,
+      "tier": 2,
+      "tipo_fuente": "institucional_profesional",
+      "nota_acceso": "Portal público. Algunas NIF pueden requerir membresía.",
+      "urls": {
+        "inicio":    "https://imcp.org.mx",
+        "nif":       "https://imcp.org.mx/normatividad/normas-de-informacion-financiera/",
+        "noticias":  "https://imcp.org.mx/noticias/",
+        "eventos":   "https://imcp.org.mx/servicios/educacion-continua/"
+      }
+    },
+
+    "imss": {
+      "nombre": "Instituto Mexicano del Seguro Social",
+      "url_base": "https://www.imss.gob.mx",
+      "confianza": 92,
+      "tier": 3,
+      "tipo_fuente": "oficial_institucional",
+      "nota_acceso": "Portal público. Secciones para patrones son de acceso libre.",
+      "urls": {
+        "inicio":   "https://www.imss.gob.mx",
+        "patrones": "https://www.imss.gob.mx/patrones",
+        "cuotas":   "https://www.imss.gob.mx/patrones/cuotas"
+      }
+    },
+
+    "infonavit": {
+      "nombre": "Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+      "url_base": "https://www.infonavit.org.mx",
+      "confianza": 90,
+      "tier": 3,
+      "tipo_fuente": "oficial_institucional",
+      "nota_acceso": "Portal público.",
+      "urls": {
+        "inicio":    "https://www.infonavit.org.mx",
+        "patrones":  "https://www.infonavit.org.mx/empresas/",
+        "aportaciones":"https://www.infonavit.org.mx/empresas/aportaciones/"
+      }
+    },
+
+    "inegi": {
+      "nombre": "Instituto Nacional de Estadística y Geografía",
+      "url_base": "https://www.inegi.org.mx",
+      "confianza": 92,
+      "tier": 3,
+      "tipo_fuente": "oficial_estadistica",
+      "nota_acceso": "Portal completamente público.",
+      "urls": {
+        "inicio":    "https://www.inegi.org.mx",
+        "inpc":      "https://www.inegi.org.mx/temas/inpc/",
+        "economia":  "https://www.inegi.org.mx/temas/pib/"
+      }
+    },
+
+    "gnews": {
+      "nombre": "Google News — Noticias especializadas",
+      "url_base": "https://news.google.com",
+      "confianza": 45,
+      "tier": 5,
+      "tipo_fuente": "agregador_noticias",
+      "nota_acceso": "Agregador público. Fuentes individuales pueden variar. Score de confianza bajo por heterogeneidad.",
+      "urls": {
+        "fiscal_mexico":  "https://news.google.com/search?q=fiscal+mexico&hl=es-419&gl=MX&ceid=MX:es-419",
+        "sat_noticias":   "https://news.google.com/search?q=SAT+impuestos+Mexico&hl=es-419&gl=MX&ceid=MX:es-419",
+        "reforma_fiscal": "https://news.google.com/search?q=reforma+fiscal+Mexico&hl=es-419&gl=MX&ceid=MX:es-419",
+        "inicio":         "https://news.google.com/search?q=fiscal+contable+mexico&hl=es-419&gl=MX&ceid=MX:es-419"
+      }
+    },
+
+    "eleconomista": {
+      "nombre": "El Economista",
+      "url_base": "https://www.eleconomista.com.mx",
+      "confianza": 72,
+      "tier": 4,
+      "tipo_fuente": "medio_especializado",
+      "nota_acceso": "Acceso parcial. Algunos artículos requieren suscripción.",
+      "urls": {
+        "inicio":    "https://www.eleconomista.com.mx",
+        "fiscal":    "https://www.eleconomista.com.mx/tags/sat",
+        "finanzas":  "https://www.eleconomista.com.mx/finanzaspersonales/"
+      }
+    }
+  },
+
+  "politica_enlaces": {
+    "version": "1.0",
+    "reglas": [
+      "Solo usar urls[] del catálogo — nunca inventar rutas",
+      "Si no existe URL específica, usar url_base de la fuente",
+      "Los PDFs de diputados.gob.mx/LeyesBiblio/ son siempre verificados y públicos",
+      "Las URLs del DOF a ediciones específicas son dinámicas — usar url_base",
+      "URLs de SAT con /tramites/ son descripciones públicas aunque la presentación requiera RFC",
+      "Google News: usar siempre la URL de búsqueda con términos específicos, nunca URLs de artículos individuales",
+      "Confianza > 90: fuente primaria oficial — priorizar",
+      "Confianza 70-89: fuente verificada pero secundaria",
+      "Confianza < 70: fuente de contexto — marcar como no-verificada en UI"
+    ],
+    "tipos_link": {
+      "oficial":      { "icono": "🏛️", "color": "#60A5FA", "label_default": "Ver fuente oficial" },
+      "dof":          { "icono": "📋", "color": "#60A5FA", "label_default": "Ver en DOF" },
+      "rmf":          { "icono": "📜", "color": "#34D399", "label_default": "Ver RMF" },
+      "declaracion":  { "icono": "📝", "color": "#34D399", "label_default": "Ir a declaración" },
+      "pdf":          { "icono": "📄", "color": "#A78BFA", "label_default": "Ver PDF oficial" },
+      "gaceta":       { "icono": "📑", "color": "#C4B5FD", "label_default": "Ver en Gaceta" },
+      "iniciativa":   { "icono": "⚖️", "color": "#C4B5FD", "label_default": "Ver iniciativa" },
+      "sil":          { "icono": "⚖️", "color": "#C4B5FD", "label_default": "Ver en SIL" },
+      "senado":       { "icono": "🏛️", "color": "#C4B5FD", "label_default": "Ver en Senado" },
+      "nif":          { "icono": "📊", "color": "#34D399", "label_default": "Ver NIF en IMCP" },
+      "regulatorio":  { "icono": "🔒", "color": "#A78BFA", "label_default": "Ver normativa" },
+      "noticias":     { "icono": "📰", "color": "#94A3B8", "label_default": "Leer noticia" }
+    }
+  }
+}

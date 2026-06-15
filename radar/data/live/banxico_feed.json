@@ -1,0 +1,91 @@
+[
+  {
+    "id": "BM-TC-FIX",
+    "title": "Tipo de Cambio FIX Oficial Banxico: $17.3232 MXN",
+    "summary": "El Banco de México publica el tipo de cambio oficial (FIX) para solventar obligaciones denominadas en moneda extranjera pagaderas en la República Mexicana, cotizando hoy en 17.3232 pesos por dólar.",
+    "published_at": "2026-05-26T00:00:00-06:00",
+    "source_url": "https://www.banxico.org.mx",
+    "source_type": "banxico",
+    "source_title": "Tipo de Cambio FIX - Banco de México",
+    "verified": true,
+    "trust_score": 100,
+    "links": [
+      {
+        "tipo": "banxico",
+        "label": "Ver en Banxico",
+        "url": "https://www.banxico.org.mx",
+        "verificado": true,
+        "es_publico": true,
+        "icono": "📈"
+      }
+    ],
+    "category": "financiero",
+    "impact": "alto",
+    "keywords": [
+      "banxico",
+      "tipo de cambio",
+      "banco de méxico",
+      "nom"
+    ],
+    "score": 92
+  },
+  {
+    "id": "BM-TASA-OBJ",
+    "title": "Tasa de Interés Objetivo de Banxico: 6.50%",
+    "summary": "La tasa de referencia de política monetaria (tasa de interés interbancaria a un día) establecida por la Junta de Gobierno del Banco de México se mantiene en 6.50%.",
+    "published_at": "2026-05-26T00:00:00-06:00",
+    "source_url": "https://www.banxico.org.mx",
+    "source_type": "banxico",
+    "source_title": "Tasa Objetivo de Referencia - Banco de México",
+    "verified": true,
+    "trust_score": 100,
+    "links": [
+      {
+        "tipo": "banxico",
+        "label": "Ver en Banxico",
+        "url": "https://www.banxico.org.mx",
+        "verificado": true,
+        "es_publico": true,
+        "icono": "🏛️"
+      }
+    ],
+    "category": "financiero",
+    "impact": "alto",
+    "keywords": [
+      "banxico",
+      "banco de méxico",
+      "política monetaria",
+      "tasa de interés"
+    ],
+    "score": 95
+  },
+  {
+    "id": "BM-INFLACION",
+    "title": "Inflación General Anualizada en México: 4.45%",
+    "summary": "El Banco de México reporta que la inflación general anualizada se ubica en 4.45% según el último dato oficial de la variación anual del Índice Nacional de Precios al Consumidor (INPC).",
+    "published_at": "2026-04-01T00:00:00-06:00",
+    "source_url": "https://www.banxico.org.mx",
+    "source_type": "banxico",
+    "source_title": "Inflación Mensual General - Banco de México",
+    "verified": true,
+    "trust_score": 100,
+    "links": [
+      {
+        "tipo": "banxico",
+        "label": "Ver en Banxico",
+        "url": "https://www.banxico.org.mx",
+        "verificado": true,
+        "es_publico": true,
+        "icono": "📊"
+      }
+    ],
+    "category": "financiero",
+    "impact": "alto",
+    "keywords": [
+      "inflación",
+      "banco de méxico",
+      "inpc"
+    ],
+    "score": 72
+  }
+]
