@@ -88,24 +88,74 @@ footer {
   color: white;
 }
 
-/* FLOAT */
-.float-btn {
+/* FAB SPEED DIAL */
+.fab-wrapper {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  background: #25D366;
-  color: white;
-  padding: 14px 22px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 16px 40px rgba(37, 211, 102, .4);
   z-index: 999;
-  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
 }
 
-.float-btn:hover {
-  transform: translateY(-4px);
+.fab-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.fab-menu.fab-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fab-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.fab-item:hover {
+  transform: scale(1.1);
+}
+
+.fab-item.whatsapp { background: #25D366; }
+.fab-item.mail { background: #264dff; }
+.fab-item.contact { background: #5b4fff; }
+
+.fab-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #5b4fff;
+  color: white;
+  border: none;
+  box-shadow: 0 8px 24px rgba(91, 79, 255, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.fab-toggle:hover {
+  transform: scale(1.05);
 }
 
 /* MOBILE */
@@ -114,21 +164,27 @@ footer {
     display: flex;
   }
   
+  .nav-actions .nav-btn {
+    display: none;
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    height: 100vh;
+    overflow-y: auto;
     background: rgba(8, 20, 38, .98);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, .05);
+    backdrop-filter: blur(24px);
+    border-top: 1px solid rgba(255, 255, 255, .05);
     flex-direction: column;
-    padding: 20px 5%;
-    gap: 20px;
+    padding: 30px 6%;
+    gap: 24px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 0.3s ease;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
   }
 
@@ -139,8 +195,8 @@ footer {
   }
 
   .nav-links a {
-    font-size: 1.1rem;
-    padding: 10px 0;
+    font-size: 1.25rem;
+    padding: 14px 0;
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, .05);
   }

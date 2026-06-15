@@ -29,9 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!isExpanded) {
         iconMenu.style.display = 'none';
         iconClose.style.display = 'block';
+        document.body.style.overflow = 'hidden';
       } else {
         iconMenu.style.display = 'block';
         iconClose.style.display = 'none';
+        document.body.style.overflow = '';
       }
     };
 
@@ -44,6 +46,39 @@ document.addEventListener('DOMContentLoaded', () => {
           toggleMenu();
         }
       });
+    });
+  }
+
+  // FAB Logic
+  const fabToggleBtn = document.getElementById('fab-toggle-btn');
+  const fabMenu = document.querySelector('.fab-menu');
+
+  if (fabToggleBtn && fabMenu) {
+    const iconChat = fabToggleBtn.querySelector('.icon-chat');
+    const iconClose = fabToggleBtn.querySelector('.icon-close');
+
+    const toggleFab = () => {
+      const isActive = fabMenu.classList.contains('fab-active');
+      fabMenu.classList.toggle('fab-active');
+
+      if (!isActive) {
+        iconChat.style.display = 'none';
+        iconClose.style.display = 'block';
+      } else {
+        iconChat.style.display = 'block';
+        iconClose.style.display = 'none';
+      }
+    };
+
+    fabToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFab();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (fabMenu.classList.contains('fab-active') && !e.target.closest('.fab-wrapper')) {
+        toggleFab();
+      }
     });
   }
 });
